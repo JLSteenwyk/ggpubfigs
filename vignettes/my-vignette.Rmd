@@ -1,18 +1,13 @@
 ---
 title: "ggpubfigs"
+author: "Jacob L. Steenwyk"
+date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{my-vignette}
-  %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteEncoding{UTF-8}
+  %\VignetteEngine{knitr::knitr}
+  %\VignetteIndexEntry{Title of your vignette}
+  %\usepackage[UTF-8]{inputenc}
 ---
-
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>"
-)
-```
 
 ggpubfigs has a set six themes to pick from. Three are for making publication ready figures and three are for presentation purposes:
 
@@ -26,12 +21,4 @@ ggpubfigs has a set six themes to pick from. Three are for making publication re
 * theme_blue()
 * theme_red()
 
-
-```{r}
-library(ggpubfigs)
-```
-
-View 
-```{r}
-ggplot(iris, aes(Sepal.Length, Petal.Length, color=Species)) + geom_point() + labs(title="Iris") + theme_grid()
-```
+These themes can be added to typical ggplot2-based commands.

@@ -1,5 +1,5 @@
 Package: ggpubfigs
-Title: create publication ready figures in R
+Title: create publication ready figures
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Jacob L.",
@@ -7,6 +7,8 @@ Authors@R:
            role = c("aut", "cre"),
            email = "jacob.steenwyk@vanderbilt.edu",
            comment = c(ORCID = "0000-0002-8436-595X"))
+Author: Jacob L. Steenwyk [aut, cre]
+Maintainer: Jacob L. Steenwyk <jacob.steenwyk@vanderbilt.edu>
 Description: An implementation of simple themes to faciltate making publication ready figures. Most useful functions will likely be theme_grid(), theme_simple(), and theme_grey(). Other functions including theme_black(), theme_blue(), and theme_red() are moreso for presentation rather than publication.
 License: MIT + file LICENSE
 Encoding: UTF-8
