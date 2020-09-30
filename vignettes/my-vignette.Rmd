@@ -1,0 +1,37 @@
+---
+title: "ggpubfigs"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{my-vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+ggpubfigs has a set six themes to pick from. Three are for making publication ready figures and three are for presentation purposes:
+
+**Publication ready themes**
+* theme_grid()
+* theme_simple()
+* theme_grey()
+
+**Presentation ready themes**
+* theme_black()
+* theme_blue()
+* theme_red()
+
+
+```{r}
+library(ggpubfigs)
+```
+
+View 
+```{r}
+ggplot(iris, aes(Sepal.Length, Petal.Length, color=Species)) + geom_point() + labs(title="Iris") + theme_grid()
+```

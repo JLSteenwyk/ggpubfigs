@@ -1,0 +1,338 @@
+ggplot(dat, aes(Assembler, N50, group = Genome)) + geom_point() + geom_line()
+ggplot(dat, aes(Assembler, N50, group = Genome)) + geom_boxplot(outlier.size=NA) + geom_point() + geom_line()
+ggplot(dat, aes(Assembler, N50, group = Genome)) + geom_boxplot(outlier.size=NA) #+ geom_point() + geom_line()
+ggplot(dat, aes(Assembler, N50)) + geom_boxplot(outlier.size=NA) #+ geom_point() + geom_line()
+ggplot(dat, aes(Assembler, N50)) + geom_boxplot(outlier.shape=NA) #+ geom_point() + geom_line()
+ggplot(dat, aes(Assembler, N50)) + geom_boxplot(outlier.shape=NA) + geom_point() + geom_line()
+ggplot(dat, aes(Assembler, N50)) + geom_boxplot(outlier.shape=NA) + geom_point(group = aes(Genome)) + geom_line(aes(Genome))
+dat<-read.table("Desktop/03_summary_of_genome_assemblies.txt", sep='\t', header=T)
+head(dat)
+library(ggplot2)
+ggplot(dat, aes(Genome, N50, color=Assembler)) + geom_violin()
+read.table("Desktop/03_summary_of_genome_assemblies.txt", sep='\t')
+dat<-read.table("Desktop/03_summary_of_genome_assemblies.txt", sep='\t', header=T)
+head(dat)
+library(ggplot2)
+ggplot(dat, aes(Genome, Value, fill=Assembler)) + geom_bar(stat='identity')
+ggplot(dat, aes(Genome, Value, fill=Assembler)) + geom_bar(stat='identity', position=dodge)
+ggplot(dat, aes(Genome, Value, fill=Assembler)) + geom_bar(stat='identity', position='dodge')
+ggplot(dat, aes(Genome, Value, fill=Assembler)) + geom_bar(stat='identity', position='dodge') + facet_wrap(~Metric)
+ggplot(dat, aes(Genome, Value, fill=Assembler)) + geom_bar(stat='identity', position='dodge') + facet_wrap(~Metric, scales="Free")
+ggplot(dat, aes(Genome, Value, fill=Assembler)) + geom_bar(stat='identity', position='dodge') + facet_wrap(~Metric, scales="free")
+ggplot(dat, aes(Genome, Value, fill=Assembler)) + geom_bar(stat='identity', position='dodge') + facet_wrap(~Metric, scales="free", ncol=1)
+ggplot(dat, aes(Genome, Value, fill=Assembler)) + geom_bar(stat='identity', position='dodge') + facet_wrap(~Metric, scales="free", ncol=1) + + theme(axis.text.x = element_text(angle = 90))
+ggplot(dat, aes(Genome, Value, fill=Assembler)) + geom_bar(stat='identity', position='dodge') + facet_wrap(~Metric, scales="free", ncol=1) + theme(axis.text.x = element_text(angle = 90))
+ggplot(dat, aes(Genome, Value, fill=Assembler)) + geom_bar(stat='identity', position='dodge') + facet_wrap(~Metric, scales="free", ncol=1) + theme(axis.text.x = element_blank())
+library(RColorBrewer)
+ggplot(dat, aes(Genome, Value, fill=Assembler)) + geom_bar(stat='identity', position='dodge') + facet_wrap(~Metric, scales="free", ncol=1) + theme(axis.text.x = element_blank()) + + scale_fill_brewer(palette="Dark2")
+ggplot(dat, aes(Genome, Value, fill=Assembler)) + geom_bar(stat='identity', position='dodge') + facet_wrap(~Metric, scales="free", ncol=1) + theme(axis.text.x = element_blank()) + scale_fill_brewer(palette="Dark2")
+ggplot(dat, aes(Genome, Value, fill=Assembler)) + geom_bar(stat='identity', position='dodge') + facet_wrap(~Metric, scales="free", ncol=1) + theme(axis.text.x = element_blank()) + scale_fill_brewer(palette="Dark2") + xlab("")
+ggplot(dat, aes(Genome, Value, fill=Assembler)) + geom_bar(stat='identity', position='dodge') + facet_wrap(~Metric, scales="free", ncol=1) + theme(axis.text.x = element_blank()) + scale_fill_brewer(palette="Dark2") + xlab("") + theme_base()
+library(ggthemes)
+ggplot(dat, aes(Genome, Value, fill=Assembler)) + geom_bar(stat='identity', position='dodge') + facet_wrap(~Metric, scales="free", ncol=1) + theme(axis.text.x = element_blank()) + scale_fill_brewer(palette="Dark2") + xlab("") + theme_base()
+ggplot(dat, aes(Genome, Value, fill=Assembler)) + geom_bar(stat='identity', position='dodge') + facet_wrap(~Metric, scales="free", ncol=1) + theme_baw() + theme(axis.text.x = element_blank()) + scale_fill_brewer(palette="Dark2") + xlab("")
+ggplot(dat, aes(Genome, Value, fill=Assembler)) + geom_bar(stat='identity', position='dodge') + facet_wrap(~Metric, scales="free", ncol=1) + theme_bw() + theme(axis.text.x = element_blank()) + scale_fill_brewer(palette="Dark2") + xlab("")
+ggplot(dat, aes(Genome, Value, fill=Assembler)) + geom_bar(stat='identity', position='dodge') + facet_wrap(~Metric, scales="free", ncol=1) + theme_base() + theme(axis.text.x = element_blank()) + scale_fill_brewer(palette="Dark2") + xlab("")
+ggplot(dat, aes(Genome, Value, fill=Assembler, width=0.75)) + geom_bar(stat='identity', position='dodge') + facet_wrap(~Metric, scales="free", ncol=1) + theme_base() + theme(axis.text.x = element_blank()) + scale_fill_brewer(palette="Dark2") + xlab("")
+install.packages("emojifont", dep=T)
+tre<-read.tree("Downloads/Full_matrix_and_subsets/TimeTree/Aspergillaceae_timetree.tre")
+library(ape)
+tre<-read.tree("Downloads/Full_matrix_and_subsets/TimeTree/Aspergillaceae_timetree.tre")
+library(phytools)
+tre<-read.tree("Downloads/Full_matrix_and_subsets/TimeTree/Aspergillaceae_timetree.tre")
+tre
+tre<-read.nexus("Downloads/Full_matrix_and_subsets/TimeTree/Aspergillaceae_timetree.tre")
+tre<-read.tre("Desktop/Aspergillus_Penicillium.tre")
+tre<-read.tree("Desktop/Aspergillus_Penicillium.tre")
+tre
+plot(tre)
+tre$edge.length
+tre$edge.length*10
+tre$edge.length<-tre$edge.length*10
+write.tree(tre, "Desktop/Aspergillus_and_Penicillium.tre")
+tre$edge.length
+write.tree(tre, "Desktop/Aspergillus_and_Penicillium.tre")
+library(phytools)
+tre<-read.tree("~/Downloads/1120yeasts_1376AA_lpp_BL_species-names_updated_rooted.tre")
+taxa_list<-read.table("Downloads/Summer_2020_DCW_species_list_tree_names.txt")
+head(taxa_list)
+head(tre$tip.label)
+tre$tip.label
+ingroup.labels<-as.vector(taxa_list$V1)
+head(ingroup.labels)
+drop.tip(tre,tre$tip.label[-match(ingroup.labels,tre$tip.label)])
+tre$tip.label[-match(ingroup.labels,tre$tip.label)])
+tre$tip.label[-match(ingroup.labels,tre$tip.label)]
+-match(ingroup.labels,tre$tip.label)
+length(ingroup.labels)
+head(ingroup.labels, 9)
+tre$tip.label == "yHMPu5000034571_tortispora_mauiana_180604"
+head(ingroup.labels, 9)
+-match(ingroup.labels,tre$tip.label)
+tre$tip.label[-match(ingroup.labels,tre$tip.label)]
+which(is.na(-match(ingroup.labels,tre$tip.label)]))
+which(is.na(-match(ingroup.labels,tre$tip.label)))
+match(which(is.na(-match(ingroup.labels,tre$tip.label))), ingroup.labels)
+ingroup.labels
+match(which(is.na(-match(ingroup.labels,tre$tip.label))), ingroup.labels)
+which(is.na(-match(ingroup.labels,tre$tip.label)))
+ingroup.labels[which(is.na(-match(ingroup.labels,tre$tip.label)))]
+library(ape)
+sessionInfo()
+library(phytools)
+tre<-read.tree("Downloads/treehouse-2020-06-05.tre")
+tre
+tre$branch.length
+tre$edge.length
+tre$edge.length*100
+han_tre<-read.tree("Downloads/Hanseniaspora_timetree_Steenwyk_PLoS_Biology_2019.tre")
+han_tre$edge.length
+tre$edge.length*10
+tre$edge.length*100
+tre_100<-tre$edge.length*100
+tre_10<-tre$edge.length*10
+write.tree("Desktop/Saccharomycotina_100.tre", tre_100)
+tre_100$edge.length<-tre$edge.length*100
+tre_10$edge.length<-tre$edge.length*10
+tre_10$edge.length
+write.tree("Desktop/Saccharomycotina_100.tre", tre_100)
+write.tree(tre_100, "Desktop/Saccharomycotina_100.tre")
+tree_100
+tre_100
+tre_100 <- tre ; tre_100$edge.length<-tre$edge.length*100
+tre_100
+tre_10 <- tre ; tre_10$edge.length<-tre$edge.length*10
+write.tree(tre_100, "Desktop/Saccharomycotina_100.tre")
+write.tree(tre_10, "Desktop/Saccharomycotina_10.tre")
+read.tree("Downloads/treehouse-2020-06-06.tre")
+library(phytools)
+tre<-read.tree("Downloads/treehouse-2020-06-06.tre")
+tre$edge.length
+tre$edge.length<-tre$edge.length*100
+write.tree(tre, "Desktop/treehouse-2020-06-06_100.tre")
+tre<-read.tree("Desktop/supertree_all.tre")
+force.ultrametric(tre, method=c("extend"))
+test<-force.ultrametric(tre, method=c("extend"))
+plot(test)
+test<-force.ultrametric(tre, method=c("nnls"))
+plot(test)
+test<-force.ultrametric(tre, method=c("extend"))
+plot(test)
+plot(tre)
+edgelabels(tre$edge.length)
+tre<-read.tree("Desktop/supertree_all_rd2.tre")
+plot(tre)
+edgelabels(tre$edge.length)
+library(FactoMineR)
+library(factoextra)
+sessionInfo()
+library(Rcpp)#
+library(ggplot2)#
+library(dplyr)#
+opt = theme(legend.position  = "none",#
+            panel.background = element_rect(fill="white"),#
+            axis.ticks       = element_blank(),#
+            panel.grid       = element_blank(),#
+            axis.title       = element_blank(),#
+            axis.text        = element_blank())#
+cppFunction('DataFrame createTrajectory(int n, double x0, double y0, #
+            double a, double b, double c, double d) {#
+            // create the columns#
+            NumericVector x(n);#
+            NumericVector y(n);#
+            x[0]=x0;#
+            y[0]=y0;#
+            for(int i = 1; i < n; ++i) {#
+            x[i] = sin(a*y[i-1])+c*cos(a*x[i-1]);#
+            y[i] = sin(b*x[i-1])+d*cos(b*y[i-1]);#
+            }#
+            // return a new data frame#
+            return DataFrame::create(_["x"]= x, _["y"]= y);#
+            }#
+            ')
+a=-0.7; b=0.4; c=-2.020; d=9.26; df=createTrajectory(10000000, 0, 0, a, b, c, d)
+ggplot(df, aes(x, y)) + geom_point(color="black", shape=46, alpha=.01) + opt + theme(panel.background = element_rect(fill="white"))
+a=-0.7; b=0.4; c=-2.020; d=.926; df=createTrajectory(10000000, 0, 0, a, b, c, d)
+ggplot(df, aes(x, y)) + geom_point(color="black", shape=46, alpha=.01) + opt + theme(panel.background = element_rect(fill="white"))
+a=-0.7; b=0.4; c=-2.020; d=1.926; df=createTrajectory(10000000, 0, 0, a, b, c, d)
+ggplot(df, aes(x, y)) + geom_point(color="black", shape=46, alpha=.01) + opt + theme(panel.background = element_rect(fill="white"))
+a=-0.7; b=0.4; c=-.2020; d=.926; df=createTrajectory(10000000, 0, 0, a, b, c, d)
+ggplot(df, aes(x, y)) + geom_point(color="black", shape=46, alpha=.01) + opt + theme(panel.background = element_rect(fill="white"))
+a=-7.0; b=4.0; c=-2.020; d=9.26; df=createTrajectory(10000000, 0, 0, a, b, c, d)
+ggplot(df, aes(x, y)) + geom_point(color="black", shape=46, alpha=.01) + opt + theme(panel.background = element_rect(fill="white"))
+png("Desktop/Dayna_started_talking.png", units="px", width=3200, height=3200, res=600)#
+ggplot(df, aes(x, y)) + geom_point(color="black", shape=46, alpha=.01) + opt + theme(panel.background = element_rect(fill="white"))#
+dev.off()
+a=-7.0; b=4.0; c=-2.020; d=9.26; df=createTrajectory(1000000, 0, 0, a, b, c, d)
+png("Desktop/Dayna_started_talking.png", units="px", width=3200, height=3200, res=600)#
+ggplot(df, aes(x, y)) + geom_point(color="black", shape=46, alpha=.01) + opt + theme(panel.background = element_rect(fill="white"))#
+dev.off()
+a=-7.0; b=4.0; c=-2.020; d=9.26; df=createTrajectory(8000000, 0, 0, a, b, c, d)
+png("Desktop/Dayna_started_talking.png", units="px", width=3200, height=3200, res=600)#
+ggplot(df, aes(x, y)) + geom_point(color="black", shape=46, alpha=.01) + opt + theme(panel.background = element_rect(fill="white"))#
+dev.off()
+library(Rcpp)#
+library(ggplot2)#
+library(dplyr)#
+opt = theme(legend.position  = "none",#
+            panel.background = element_rect(fill="white"),#
+            axis.ticks       = element_blank(),#
+            panel.grid       = element_blank(),#
+            axis.title       = element_blank(),#
+            axis.text        = element_blank())#
+cppFunction('DataFrame createTrajectory(int n, double x0, double y0, #
+            double a, double b, double c, double d) {#
+            // create the columns#
+            NumericVector x(n);#
+            NumericVector y(n);#
+            x[0]=x0;#
+            y[0]=y0;#
+            for(int i = 1; i < n; ++i) {#
+            x[i] = sin(a*y[i-1])+c*cos(a*x[i-1]);#
+            y[i] = sin(b*x[i-1])+d*cos(b*y[i-1]);#
+            }#
+            // return a new data frame#
+            return DataFrame::create(_["x"]= x, _["y"]= y);#
+            }#
+            ')
+a=-6.0; b=7.0; c=-2.6; d=3.0; df=createTrajectory(8000000, 0, 0, a, b, c, d)
+ggplot(df, aes(x, y)) + geom_point(color="black", shape=46, alpha=.01) + opt + theme(panel.background = element_rect(fill="white"))
+png("Desktop/Dayna_lucky_set1.png", units="px", width=3200, height=3200, res=600)#
+ggplot(df, aes(x, y)) + geom_point(color="black", shape=46, alpha=.01) + opt + theme(panel.background = element_rect(fill="white"))#
+dev.off()
+a=-3.5; b=3.8; c=-5.3; d=2.020; df=createTrajectory(8000000, 0, 0, a, b, c, d)
+png("Desktop/Dayna_lucky_set1.png", units="px", width=3200, height=3200, res=600)#
+ggplot(df, aes(x, y)) + geom_point(color="black", shape=46, alpha=.01) + opt + theme(panel.background = element_rect(fill="white"))#
+dev.off()
+a=-3.5; b=3.8; c=-5.3; d=2.020; df=createTrajectory(8000000, 0, 0, a, b, c, d)#
+png(“Desktop/Dayna_lucky_set2.png”, units="px", width=3200, height=3200, res=600)#
+ggplot(df, aes(x, y)) + geom_point(color="black", shape=46, alpha=.01) + opt + theme(panel.background = element_rect(fill="white"))#
+dev.off()
+a=-3.5; b=3.8; c=-5.3; d=2.020; df=createTrajectory(8000000, 0, 0, a, b, c, d)#
+png("Desktop/Dayna_lucky_set2.png", units="px", width=3200, height=3200, res=600)#
+ggplot(df, aes(x, y)) + geom_point(color="black", shape=46, alpha=.01) + opt + theme(panel.background = element_rect(fill="white"))#
+dev.off()
+a=-6.0; b=7.0; c=-2.6; d=3.0; df=createTrajectory(8000000, 0, 0, a, b, c, d)
+png("Desktop/Dayna_lucky_set1.png", units="px", width=3200, height=3200, res=600)#
+ggplot(df, aes(x, y)) + geom_point(color="black", shape=46, alpha=.01) + opt + theme(panel.background = element_rect(fill="white"))#
+dev.off()
+library(Rcpp)#
+library(ggplot2)#
+library(dplyr)#
+opt = theme(legend.position  = "none",#
+            panel.background = element_rect(fill="white"),#
+            axis.ticks       = element_blank(),#
+            panel.grid       = element_blank(),#
+            axis.title       = element_blank(),#
+            axis.text        = element_blank())#
+cppFunction('DataFrame createTrajectory(int n, double x0, double y0, #
+            double a, double b, double c, double d) {#
+            // create the columns#
+            NumericVector x(n);#
+            NumericVector y(n);#
+            x[0]=x0;#
+            y[0]=y0;#
+            for(int i = 1; i < n; ++i) {#
+            x[i] = sin(a*y[i-1])+c*cos(a*x[i-1]);#
+            y[i] = sin(b*x[i-1])+d*cos(b*y[i-1]);#
+            }#
+            // return a new data frame#
+            return DataFrame::create(_["x"]= x, _["y"]= y);#
+            }#
+            ')
+a=-.35; b=.38; c=-.53; d=.2020; df=createTrajectory(8000000, 0, 0, a, b, c, d)
+a=-.35; b=.38; c=-.53; d=.2020; df=createTrajectory(2000000, 0, 0, a, b, c, d)
+ggplot(df, aes(x, y)) + geom_point(color="black", shape=46, alpha=.01) + opt + theme(panel.background = element_rect(fill="white"))
+a=-6; b=1.5; c=-2.4; d=3.3; df=createTrajectory(2000000, 0, 0, a, b, c, d)
+ggplot(df, aes(x, y)) + geom_point(color="black", shape=46, alpha=.01) + opt + theme(panel.background = element_rect(fill="white"))
+a=-6; b=1.5; c=-2.4; d=3.3; df=createTrajectory(8000000, 0, 0, a, b, c, d)
+png("Desktop/Libra_lucky_set1.png", units="px", width=3200, height=3200, res=600)
+ggplot(df, aes(x, y)) + geom_point(color="black", shape=46, alpha=.01) + opt + theme(panel.background = element_rect(fill="white"))
+dev.off()
+a=-4.2; b=5.1; c=-6.0; d=2.020; df=createTrajectory(2000000, 0, 0, a, b, c, d)
+ggplot(df, aes(x, y)) + geom_point(color="black", shape=46, alpha=.01) + opt + theme(panel.background = element_rect(fill="white"))
+a=-4.2; b=5.1; c=-6.0; d=2.020; df=createTrajectory(8000000, 0, 0, a, b, c, d)
+png("Desktop/Libra_lucky_set2.png", units="px", width=3200, height=3200, res=600)
+ggplot(df, aes(x, y)) + geom_point(color="black", shape=46, alpha=.01) + opt + theme(panel.background = element_rect(fill="white"))
+dev.off()
+a=-2.2; b=2.1; c=-2.0; d=2.020; df=createTrajectory(2000000, 0, 0, a, b, c, d)
+ggplot(df, aes(x, y)) + geom_point(color="black", shape=46, alpha=.01) + opt + theme(panel.background = element_rect(fill="white"))
+png("Desktop/Dayna_thoughts.png", units="px", width=3200, height=3200, res=600)
+a=-2.2; b=2.1; c=-2.0; d=2.020; df=createTrajectory(8000000, 0, 0, a, b, c, d)
+ggplot(df, aes(x, y)) + geom_point(color="black", shape=46, alpha=.01) + opt + theme(panel.background = element_rect(fill="white"))#
+dev.off()
+a=-1.1; b=1.1; c=-1.1; d=1.1; df=createTrajectory(8000000, 0, 0, a, b, c, d)
+a=-1.1; b=1.1; c=-1.1; d=1.1; df=createTrajectory(1000000, 0, 0, a, b, c, d)
+ggplot(df, aes(x, y)) + geom_point(color="black", shape=46, alpha=.01) + opt + theme(panel.background = element_rect(fill="white"))
+a=-1.; b=1.; c=-1.; d=1.; df=createTrajectory(1000000, 0, 0, a, b, c, d)
+ggplot(df, aes(x, y)) + geom_point(color="black", shape=46, alpha=.01) + opt + theme(panel.background = element_rect(fill="white"))
+a=-1.1; b=1.; c=-1.1; d=1.; df=createTrajectory(1000000, 0, 0, a, b, c, d)
+ggplot(df, aes(x, y)) + geom_point(color="black", shape=46, alpha=.01) + opt + theme(panel.background = element_rect(fill="white"))
+a=-1.1; b=1.1; c=-.1; d=.1; df=createTrajectory(1000000, 0, 0, a, b, c, d)
+ggplot(df, aes(x, y)) + geom_point(color="black", shape=46, alpha=.01) + opt + theme(panel.background = element_rect(fill="white"))
+a=-1.1; b=.1; c=-.1; d=1.1; df=createTrajectory(1000000, 0, 0, a, b, c, d)
+ggplot(df, aes(x, y)) + geom_point(color="black", shape=46, alpha=.01) + opt + theme(panel.background = element_rect(fill="white"))
+a=-1.111; b=1.1; c=-11.1; d=1.11111; df=createTrajectory(1000000, 0, 0, a, b, c, d)
+ggplot(df, aes(x, y)) + geom_point(color="black", shape=46, alpha=.01) + opt + theme(panel.background = element_rect(fill="white"))
+a=-1.111; b=1.1; c=-11.1; d=1.11111; df=createTrajectory(8000000, 0, 0, a, b, c, d)
+ggplot(df, aes(x, y)) + geom_point(color="black", shape=46, alpha=.01) + opt + theme(panel.background = element_rect(fill="white"))
+png("Desktop/Dayna_1s.png", units="px", width=3200, height=3200, res=600)
+ggplot(df, aes(x, y)) + geom_point(color="black", shape=46, alpha=.01) + opt + theme(panel.background = element_rect(fill="white")) ; dev.off()
+a=-1.111111; b=11.1111111111111; c=-11.1111111111; d=1.11111111111; df=createTrajectory(1000000, 0, 0, a, b, c, d)
+ggplot(df, aes(x, y)) + geom_point(color="black", shape=46, alpha=.01) + opt + theme(panel.background = element_rect(fill="white")) ; dev.off()
+ggplot(df, aes(x, y)) + geom_point(color="black", shape=46, alpha=.01) + opt + theme(panel.background = element_rect(fill="white"))
+a=-1.111111; b=11.1111111111111; c=-11.1111111111; d=1.11111111111; df=createTrajectory(8000000, 0, 0, a, b, c, d)
+png("Desktop/Dayna_1s_second.png", units="px", width=3200, height=3200, res=600)
+ggplot(df, aes(x, y)) + geom_point(color="black", shape=46, alpha=.01) + opt + theme(panel.background = element_rect(fill="white")) ; dev.off()
+a=-.111; b=1.1111111; c=-.1111111; d=1.1111; df=createTrajectory(8000000, 0, 0, a, b, c, d)
+ggplot(df, aes(x, y)) + geom_point(color="black", shape=46, alpha=.01) + opt + theme(panel.background = element_rect(fill="white"))
+library(igraph)
+session_info
+session_info()
+sessionInfo()
+.libPaths()
+lapply(.libPaths(), list.dirs, recursive = FALSE, full.names = FALSE)
+library(available)
+library("available")
+install.packages("available", dep=T)
+library(available)
+available("ggpubfig")
+available("ggpubfigs")
+setwd("Desktop/GITHUB/")
+setwd("ggpubfigs/")
+usethis::create_package()
+create_package()
+library("usethis")
+create_package()
+getwd()
+create_package("/Users/jlsteenwyk/Desktop/GITHUB/ggpubfigs")
+ls()
+proj_sitrep()
+load_all()
+library(devtools)
+load_all()
+load_all()
+library(ggplot2)
+head(iris)
+ggplot(iris, aes(Sepal.Length, Petal.Length, fill=Species))
+ggplot(iris, aes(Sepal.Length, Petal.Length, fill=Species)) + geom_point()
+ggplot(iris, aes(Sepal.Length, Petal.Length, fill=Species)) + geom_point()
+ggplot(iris, aes(Sepal.Length, Petal.Length, fill=Species)) + geom_point() + theme_basic()
+ggplot(iris, aes(Sepal.Length, Petal.Length, fill=Species)) + geom_point() + theme_basic()
+load_all()
+ggplot(iris, aes(Sepal.Length, Petal.Length, fill=Species)) + geom_point() + theme_basic()
+ggplot(iris, aes(Sepal.Length, Petal.Length, fill=Species)) + geom_point() + theme_basic()
+load_all()
+ggplot(iris, aes(Sepal.Length, Petal.Length, fill=Species)) + geom_point() + theme_basic()
+ggplot(iris, aes(Sepal.Length, Petal.Length, fill=Species)) + geom_point() + theme_basic()
+ggplot(iris, aes(Sepal.Length, Petal.Length, fill=Species)) + geom_point() + theme_basic()
+ggplot(iris, aes(Sepal.Length, Petal.Length, fill=Species)) + geom_point() + theme_basic()
+ggplot(iris, aes(Sepal.Length, Petal.Length, fill=Species)) + geom_point() + theme_basic()
+ggplot(iris, aes(Sepal.Length, Petal.Length, fill=Species)) + geom_point() + theme_basic()
+ggplot(iris, aes(Sepal.Length, Petal.Length, fill=Species)) + geom_point() + theme_basic()
+p<-ggplot(iris, aes(Sepal.Length, Petal.Length, fill=Species)) + geom_point() + theme_basic()
+p
+p
+p<-ggplot(iris, aes(Sepal.Length, Petal.Length, color=Species)) + geom_point() + theme_basic()
+p
+p

@@ -1,0 +1,21 @@
+Package: ggpubfigs
+Title: create publication ready figures in R
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Jacob L.",
+           family = "Steenwyk",
+           role = c("aut", "cre"),
+           email = "jacob.steenwyk@vanderbilt.edu",
+           comment = c(ORCID = "0000-0002-8436-595X"))
+Description: An implementation of simple themes to faciltate making publication ready figures. Most useful functions will likely be theme_grid(), theme_simple(), and theme_grey(). Other functions including theme_black(), theme_blue(), and theme_red() are moreso for presentation rather than publication.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Imports:
+    ggplot2
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
