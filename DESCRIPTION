@@ -1,5 +1,5 @@
-Package: "ggpubfigs"
-Title: "create publication ready figures"
+Package: ggpubfigs
+Title: ggpubfigs
 Version: 0.0.1
 Authors@R: 
     person(given = "Jacob L.",
