@@ -1,5 +1,10 @@
 <p align="center">
     <p align="center">
+    <a href="https://github.com/JLSteenwyk/ggpubfigs">
+        <img src="https://raw.githubusercontent.com/JLSteenwyk/ggpubfigs/logo.jpg" alt="Logo" width="400">
+    </a>
+    </p>
+    <p align="center">
         <a href="https://lbesson.mit-license.org/" alt="License">
             <img src="https://img.shields.io/badge/License-MIT-blue.svg">
         </a>

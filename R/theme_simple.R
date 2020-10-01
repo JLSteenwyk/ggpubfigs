@@ -2,10 +2,6 @@
 #'
 #' @description
 #' Simple theme for ggplot2 plots. See \href{https://ggplot2.tidyverse.org/reference/theme.html}{theme()} for complete documentation.
-#' 
-#' @examples
-#' ggplot(iris, aes(Sepal.Length, Petal.Length, color=Species)) + geom_point() + 
-#'  labs(title="Iris") + theme_simple() + facet_wrap(~Species)
 theme_simple <- function () { 
     theme_bw(base_size=12, base_family="Arial") %+replace% 
         theme(
