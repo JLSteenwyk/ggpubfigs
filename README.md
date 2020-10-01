@@ -19,6 +19,12 @@
 <br /><br />
 
 ---
+## Install
+```R
+devtools::install_github("JLSteenwyk/ggpubfigs")
+```
+
+---
 ## Publication-ready figures 
 **theme_grid()**<br />
 ```R
