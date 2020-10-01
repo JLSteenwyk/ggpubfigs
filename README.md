@@ -1,7 +1,7 @@
 <p align="center">
     <p align="center">
     <a href="https://github.com/JLSteenwyk/ggpubfigs">
-        <img src="https://raw.githubusercontent.com/JLSteenwyk/ggpubfigs/logo.jpg" alt="Logo" width="400">
+        <img src="https://raw.githubusercontent.com/JLSteenwyk/ggpubfigs/master/docs/logo.jpg" alt="Logo" width="400">
     </a>
     </p>
     <p align="center">
