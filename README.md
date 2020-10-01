@@ -19,9 +19,12 @@
 <br /><br />
 
 ---
-## Install
+## Install and load
 ```R
+# execute this command only the first time you use ggpubfigs
 devtools::install_github("JLSteenwyk/ggpubfigs")
+
+library(ggpubfigs)
 ```
 
 ---
