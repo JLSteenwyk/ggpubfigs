@@ -24,7 +24,9 @@
 [Install](#install)<br />
 [Color palettes](#color-palettes)<br />
 [Themes](#themes)<br />
-[FAQ](#faq)
+[FAQ](#faq)<br />
+[Acknowledgements](#acknowledgements)
+<br /><br />
 
 ---
 ## Install
@@ -34,6 +36,7 @@ devtools::install_github("JLSteenwyk/ggpubfigs")
 # load ggpubfigs
 library(ggpubfigs)
 ```
+<br /><br />
 
 ---
 ## Color palettes
@@ -59,6 +62,7 @@ image(volcano, col = pal)
 ```
 <center><img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/contrast_three_volcano.png" alt="friendly_pals" width="400"></center>
 
+<br /><br />
 
 ---
 ## Themes
@@ -104,8 +108,14 @@ ggplot(iris, aes(Sepal.Length, Petal.Width, color = Species)) + geom_point() + t
 ggplot(iris, aes(Sepal.Length, Petal.Width, color = Species)) + geom_point() + theme_red()
 ```
 <center><img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/red.png" alt="Red" width="400"></center>
-
+<br />
 ---
 ## FAQ
 **Can I submit color palettes or themes to be incorporated into ggpubfigs?**<br />
 Yes! Submissions are encouraged, please feel free to contact me via  [twitter](https://twitter.com/jlsteenwyk) or from my [contact information](https://jlsteenwyk.com/contact.html). 
+<br /><br />
+
+---
+## Acknowledgements
+I would like to thank the blooming R community for all the very helpful online forums, discussions, and open source books that have helped me learn R.<br /><br />
+I would also like to acknowledge that some of the example usage and color palette code was developed based on open source code from the [wes anderson](https://github.com/karthik/wesanderson) color palette package. 
