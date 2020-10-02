@@ -15,7 +15,8 @@
 </p>
 
 
-**ggpubfigs** is a ggplot2 extension that helps create publication ready figures for the life sciences.
+**ggpubfigs** is a ggplot2 extension that helps create publication ready figures for the life sciences.<br />
+Importantly, ggpubfigs implements themes and color palettes that are both aesthetically pleasing and color blind friendly.
 <br /><br />
 
 ---
