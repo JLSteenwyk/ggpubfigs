@@ -15,13 +15,14 @@
 </p>
 
 
-**ggpubfigs** is a collection of themes for ggplot2, which help create publication (or presentation) ready figures for the life sciences.
+**ggpubfigs** is a collection of themes and color blind friendly color palettes for ggplot2, which help create publication (or presentation) ready figures for the life sciences.
 <br /><br />
 
 ---
 
 ## Guide
 [Install](#install)<br />
+[Quick Start](#quick-start)<br />
 [Color palettes](#color-palettes)<br />
 [Themes](#themes)<br />
 [FAQ](#faq)<br />
@@ -36,79 +37,136 @@ devtools::install_github("JLSteenwyk/ggpubfigs")
 # load ggpubfigs
 library(ggpubfigs)
 ```
-<br /><br />
+<br />
+
+---
+## Quick Start
+```R
+# Right: using the "ito_seven" color palette and simple_theme()
+ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("ito_seven")) + theme_simple()
+
+# Left: using the "bright_seven" color palette and theme_grid()
+ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("bright_seven")) + theme_grid()
+```
+<p align="center">
+<img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/ito_simple.png" alt="ito_simple" width="400">
+<img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/bright_grid.png" alt="ito_simple" width="400">
+</p>
+<br />
 
 ---
 ## Color palettes
 Color palettes are all color blind friendly. Thus, your figures will be accessible to more people, which is inarguably better for your audience and you. <br /><br />
 Color palettes are named using the following scheme: *identifier* (underscore) *number of colors in color palette*.<br /><br />
 Currently, there are six color palettes to pick from.<br />
-<center><img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/friendly_pals.png" alt="friendly_pals" width="400"></center>
+<p align="center"><img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/friendly_pals.png" alt="friendly_pals" width="400"></p>
 
-To use these color blind friendly color palettes, use the following command as an example:<br />
+To use these color blind friendly color palettes, use the following command as an example for both discrete and continuous purposes:<br />
 
 ```R
+# left
 ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("contrast_three"))
-```
-<center><img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/contrast_three.png" alt="friendly_pals" width="400"></center>
 
-
-<br />
-Alternatively, create continuous color palettes for heatmaps or volcano plots.<br />
-
-```R
+# right
 pal <- friendly_pal("contrast_three", 50, type = "continuous")<br />
 image(volcano, col = pal)
 ```
-<center><img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/contrast_three_volcano.png" alt="friendly_pals" width="400"></center>
+<p align="center">
+<img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/contrast_three.png" alt="friendly_pals" width="400">
+<br />
 
-<br /><br />
+<img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/contrast_three_volcano.png" alt="friendly_pals" width="400">
+</p>
+<br />
 
 ---
 ## Themes
 ### Publication-ready figures 
 **theme_grid()**<br />
 ```R
+# left
 ggplot(iris, aes(Sepal.Length, Petal.Width, color = Species)) + geom_point() + theme_grid()
+
+# right
+ggplot(iris, aes(Sepal.Length, fill = Species)) + geom_histogram() + theme_grid()
 ```
-<center><img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/grid.png" alt="Grid" width="400"></center>
+<p align="center">
+<img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/grid.png" alt="Grid" width="400">
+<img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/grid_histo.png" alt="Grid" width="400">
+</p>
 <br />
 
 **theme_simple()**<br />
 ```R
+# left
 ggplot(iris, aes(Sepal.Length, Petal.Width, color = Species)) + geom_point() + theme_simple()
+
+# right
+ggplot(iris, aes(Sepal.Length, fill = Species)) + geom_histogram() + theme_simple()
 ```
-<center><img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/simple.png" alt="Simple" width="400"></center>
+<p align="center">
+<img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/simple.png" alt="Simple" width="400">
+<img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/simple_histo.png" alt="Simple" width="400">
+</p>
 <br />
 
 **theme_grey()**<br />
 ```R
+# left
 ggplot(iris, aes(Sepal.Length, Petal.Width, color = Species)) + geom_point() + theme_grey()
+
+# right
+ggplot(iris, aes(Sepal.Length, fill = Species)) + geom_histogram() + theme_grey()
 ```
-<center><img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/grey.png" alt="Grey" width="400"></center>
+<p align="center">
+<img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/grey.png" alt="Grey" width="400">
+<img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/grey_histo.png" alt="Grey" width="400">
+</p>
 <br />
 
 ### Presentation-ready figures 
 **theme_black()**<br />
 ```R
+# left
 ggplot(iris, aes(Sepal.Length, Petal.Width, color = Species)) + geom_point() + theme_black()
+
+# right
+ggplot(iris, aes(Sepal.Length, fill = Species)) + geom_histogram() + theme_black()
 ```
-<center><img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/black.png" alt="Black" width="400"></center>
+<p align="center">
+<img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/black.png" alt="Black" width="400">
+<img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/black_histo.png" alt="Black" width="400">
+</p>
 <br />
 
 **theme_blue()**<br />
 ```R
+# left
 ggplot(iris, aes(Sepal.Length, Petal.Width, color = Species)) + geom_point() + theme_blue()
+
+# right
+ggplot(iris, aes(Sepal.Length, fill = Species)) + geom_histogram() + theme_blue()
 ```
-<center><img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/blue.png" alt="Blue" width="400"></center>
+<p align="center">
+<img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/blue.png" alt="Blue" width="400">
+<img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/blue_histo.png" alt="Blue" width="400">
+</p>
 <br />
 
 **theme_red()**<br />
 ```R
+# left
 ggplot(iris, aes(Sepal.Length, Petal.Width, color = Species)) + geom_point() + theme_red()
+
+# right
+ggplot(iris, aes(Sepal.Length, fill = Species)) + geom_histogram() + theme_red()
 ```
-<center><img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/red.png" alt="Red" width="400"></center>
+<p align="center">
+<img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/red.png" alt="Red" width="400">
+<img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/red_histo.png" alt="Red" width="400">
+</p>
 <br />
+
 ---
 ## FAQ
 **Can I submit color palettes or themes to be incorporated into ggpubfigs?**<br />
