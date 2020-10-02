@@ -15,7 +15,7 @@
 </p>
 
 
-**ggpubfigs** is a collection of themes and color blind friendly color palettes for ggplot2, which help create publication (or presentation) ready figures for the life sciences.
+**ggpubfigs** helps create publication ready figures for the life sciences.
 <br /><br />
 
 ---
