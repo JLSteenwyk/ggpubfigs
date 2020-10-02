@@ -283,67 +283,56 @@ library(ggpubfigs)
 install.packages(ggpubfigs)
 install.packages("ggpubfigs")
 setwd("Desktop/GITHUB/ggpubfigs/")
-devtools::load_all()
-ggplot(iris, aes(Sepal.Length, Petal.Width, color = Species)) + geom_point() + theme_simple()
-library(ggplot2)
-ggplot(iris, aes(Sepal.Length, Petal.Width, color = Species)) + geom_point() + theme_simple()
-p<-ggplot(iris, aes(Sepal.Length, Petal.Width, color = Species)) + geom_point() + theme_simple()
-p
-ggplot(iris, aes(Sepal.Length, Petal.Width, color = Species)) + geom_point() + theme_simple() + scale_fill_manual(values = wes_palette("bright_seven"))
-ggplot(iris, aes(Sepal.Length, Petal.Width, color = Species)) + geom_point() + theme_simple() + scale_fill_manual(values = friendly_pal("bright_seven"))
-p<-ggplot(iris, aes(Sepal.Length, Petal.Width, color = Species)) + geom_point() + theme_simple() + scale_fill_manual(values = friendly_pal("bright_seven"))
-p
-p<-ggplot(iris, aes(Sepal.Length, Petal.Width, color = Species)) + geom_point() + theme_simple() + scale_fill_manual(values = friendly_pal("bright_seven"))
-p
-p<-ggplot(iris, aes(Sepal.Length, Petal.Width, color = Species)) + geom_point() + theme_simple() + scale_color_manual(values = friendly_pal("bright_seven"))
-p
-friendly_pals()
-friendly_pal("bright_seven")
-show_col(friendly_pal("bright_seven"))
-library(scales)
-show_col(friendly_pal("bright_seven"))
-show_col(friendly_pal("bright_seven"))
-show_col(friendly_pal("muted_nine"))
-show_col(friendly_pal("bright_seven"))
-show_col(friendly_pal("bright_seven")[6])
-show_col(friendly_pal("ito_eight"))
-show_col(friendly_pal("vibrant_seven"))
 load_all()
 devtools::load_all()
-show_col(friendly_pal("vibrant_seven"))
-show_col(friendly_pal("nickel_five"))
-show_col(friendly_pal("contrast_three"))
-ggplot(iris, aes(Sepal.Length, Petal.Width, color = Species)) + geom_point() + scale_fill_manual(values = friendly_pal("bright_seven"))
-ggplot(iris, aes(Sepal.Length, Petal.Width, color = Species)) + geom_point() + scale_color_manual(values = friendly_pal("bright_seven"))
-head(mtcars)
-ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() +#
-  scale_fill_manual(values = wes_palette("bright_seven"))
-ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() +#
-  scale_fill_manual(values = friendly_pal("bright_seven"))
-ggplot(mtcars, aes(factor(cyl), fill=factor(carb))) + geom_bar() +#
-  scale_fill_manual(values = friendly_pal("bright_seven"))
-ggplot(mtcars, aes(factor(cyl), fill=factor(carb))) + geom_bar() +#
-  scale_fill_manual(values = friendly_pal("vibrant_seven"))
-ggplot(mtcars, aes(factor(cyl), fill=factor(carb))) + geom_bar() +#
-  scale_fill_manual(values = friendly_pal("muted_nine"))
-ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() +#
-  scale_fill_manual(values = friendly_pal("muted_nine"))
-ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() +#
-  scale_fill_manual(values = friendly_pal("ito_seven"))
-ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() +#
-  scale_fill_manual(values = friendly_pal("contrast_three"))
-ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() +#
-  scale_fill_manual(values = friendly_pal("contrast_three"))
-ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() +#
-  scale_fill_manual(values = friendly_pal("contrast_three"))
-png(filename="master/docs/_static/contrast_three.png")
-ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() +#
-  scale_fill_manual(values = friendly_pal("contrast_three"))
+library(ggplot2)
+devtools::load_all()
+ggplot(iris, aes(Sepal.Length, Petal.Width, color = Species)) + geom_bar(stat='identity') + theme_grid()
+ggplot(iris, aes(Sepal.Length, Petal.Width, fill = Species)) + geom_bar(stat='identity') + theme_grid()
+ggplot(iris, aes(Sepal.Length, Petal.Width, fill = Species)) + geom_histogram(stat='identity') + theme_grid()
+ggplot(iris, aes(Sepal.Length, Petal.Width, fill = Species)) + geom_histogram() + theme_grid()
+ggplot(iris, aes(Sepal.Length, Petal.Width, fill = Species)) + geom_bar(stat='identity') + theme_grid()
+ggplot(iris, aes(Sepal.Length, Petal.Width, fill = Species)) + geom_bar(stat='identity') + theme_grid()
+p<-ggplot(iris, aes(Sepal.Length, Petal.Width, fill = Species)) + geom_bar(stat='identity') + theme_grid()
+p
+p<-ggplot(iris, aes(Sepal.Length, fill = Species)) + geom_bar(stat='identity') + theme_grid()
+p
+p<-ggplot(iris, aes(Sepal.Length, fill = Species)) + geom_histogram(stat='identity') + theme_grid()
+p<-ggplot(iris, aes(Sepal.Length, fill = Species)) + geom_histogram() + theme_grid()
+p
+png(filename="master/docs/_static/grid_histo.png")
+p
 dev.off()
-pal <- friendly_pal("contrast_three", 100, type = "continuous")
-image(volcano, col = pal)
-pal <- friendly_pal("contrast_three", 50, type = "continuous")
-image(volcano, col = pal)
-png(filename="master/docs/_static/contrast_three_volcano.png")
-image(volcano, col = pal)
+png(filename="master/docs/_static/simple_histo.png")
+ggplot(iris, aes(Sepal.Length, fill = Species)) + geom_histogram() + theme_simple()
+dev.off()
+png(filename="master/docs/_static/grey_histo.png")
+ggplot(iris, aes(Sepal.Length, fill = Species)) + geom_histogram() + theme_grey()
+dev.off()
+png(filename="master/docs/_static/black_histo.png")
+ggplot(iris, aes(Sepal.Length, fill = Species)) + geom_histogram() + theme_black()
+dev.off()
+png(filename="master/docs/_static/blue_histo.png")
+ggplot(iris, aes(Sepal.Length, fill = Species)) + geom_histogram() + theme_blue()
+dev.off()
+png(filename="master/docs/_static/red_histo.png")
+ggplot(iris, aes(Sepal.Length, fill = Species)) + geom_histogram() + theme_red()
+dev.off()
+ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("muted_nine"))
+p<-ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("muted_nine"))
+p
+p
+p<-ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("muted_nine")) + theme_simple()
+p
+p<-ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("ito_seven")) + theme_simple()
+p
+p<-ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("bright_seven")) + theme_simple()
+p
+png(filename="master/docs/_static/ito_simple.png")
+ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("ito_seven")) + theme_simple()
+dev.off()
+p<-ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("bright_seven")) + theme_grid()
+p
+png(filename="master/docs/_static/bright_grid.png")
+p
 dev.off()
