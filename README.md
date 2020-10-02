@@ -41,16 +41,23 @@ library(ggpubfigs)
 
 ---
 ## Quick Start
-```R
-# Right: using the "ito_seven" color palette and simple_theme()
-ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("ito_seven")) + theme_simple()
+These *quick start* examples demonstrate how to implement two aesthetically pleasing themes and color palettes. 
 
-# Left: using the "bright_seven" color palette and theme_grid()
-ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("bright_seven")) + theme_grid()
+```R
+# using the "ito_seven" color palette and simple_theme()
+ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("ito_seven")) + theme_simple()
 ```
 <p align="center">
 <img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/ito_simple.png" alt="ito_simple" width="400">
-<img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/bright_grid.png" alt="ito_simple" width="400">
+</p>
+<br />
+
+```R
+# using the "bright_seven" color palette and theme_grid()
+ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("bright_seven")) + theme_grid()
+```
+<p align="center">
+<img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/bright_grid.png" alt="bright_grid" width="400">
 </p>
 <br />
 
@@ -64,17 +71,18 @@ Currently, there are six color palettes to pick from.<br />
 To use these color blind friendly color palettes, use the following command as an example for both discrete and continuous purposes:<br />
 
 ```R
-# left
 ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("contrast_three"))
+```
+<p align="center">
+<img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/contrast_three.png" alt="friendly_pals" width="400">
+</p>
+<br />
 
-# right
+```R
 pal <- friendly_pal("contrast_three", 50, type = "continuous")<br />
 image(volcano, col = pal)
 ```
 <p align="center">
-<img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/contrast_three.png" alt="friendly_pals" width="400">
-<br />
-
 <img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/contrast_three_volcano.png" alt="friendly_pals" width="400">
 </p>
 <br />
@@ -84,42 +92,51 @@ image(volcano, col = pal)
 ### Publication-ready figures 
 **theme_grid()**<br />
 ```R
-# left
 ggplot(iris, aes(Sepal.Length, Petal.Width, color = Species)) + geom_point() + theme_grid()
-
-# right
-ggplot(iris, aes(Sepal.Length, fill = Species)) + geom_histogram() + theme_grid()
 ```
 <p align="center">
 <img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/grid.png" alt="Grid" width="400">
+</p>
+<br />
+
+```R
+ggplot(iris, aes(Sepal.Length, fill = Species)) + geom_histogram() + theme_grid()
+```
+<p align="center">
 <img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/grid_histo.png" alt="Grid" width="400">
 </p>
 <br />
 
 **theme_simple()**<br />
 ```R
-# left
 ggplot(iris, aes(Sepal.Length, Petal.Width, color = Species)) + geom_point() + theme_simple()
-
-# right
-ggplot(iris, aes(Sepal.Length, fill = Species)) + geom_histogram() + theme_simple()
 ```
 <p align="center">
 <img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/simple.png" alt="Simple" width="400">
+</p>
+<br />
+
+```R
+ggplot(iris, aes(Sepal.Length, fill = Species)) + geom_histogram() + theme_simple()
+```
+<p align="center">
 <img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/simple_histo.png" alt="Simple" width="400">
 </p>
 <br />
 
 **theme_grey()**<br />
 ```R
-# left
 ggplot(iris, aes(Sepal.Length, Petal.Width, color = Species)) + geom_point() + theme_grey()
-
-# right
-ggplot(iris, aes(Sepal.Length, fill = Species)) + geom_histogram() + theme_grey()
 ```
 <p align="center">
 <img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/grey.png" alt="Grey" width="400">
+</p>
+<br />
+
+```R
+ggplot(iris, aes(Sepal.Length, fill = Species)) + geom_histogram() + theme_grey()
+```
+<p align="center">
 <img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/grey_histo.png" alt="Grey" width="400">
 </p>
 <br />
@@ -127,42 +144,51 @@ ggplot(iris, aes(Sepal.Length, fill = Species)) + geom_histogram() + theme_grey(
 ### Presentation-ready figures 
 **theme_black()**<br />
 ```R
-# left
 ggplot(iris, aes(Sepal.Length, Petal.Width, color = Species)) + geom_point() + theme_black()
-
-# right
-ggplot(iris, aes(Sepal.Length, fill = Species)) + geom_histogram() + theme_black()
 ```
 <p align="center">
 <img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/black.png" alt="Black" width="400">
+</p>
+<br />
+
+```R
+ggplot(iris, aes(Sepal.Length, fill = Species)) + geom_histogram() + theme_black()
+```
+<p align="center">
 <img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/black_histo.png" alt="Black" width="400">
 </p>
 <br />
 
 **theme_blue()**<br />
 ```R
-# left
 ggplot(iris, aes(Sepal.Length, Petal.Width, color = Species)) + geom_point() + theme_blue()
-
-# right
-ggplot(iris, aes(Sepal.Length, fill = Species)) + geom_histogram() + theme_blue()
 ```
 <p align="center">
 <img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/blue.png" alt="Blue" width="400">
+</p>
+<br />
+
+```R
+ggplot(iris, aes(Sepal.Length, fill = Species)) + geom_histogram() + theme_blue()
+```
+<p align="center">
 <img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/blue_histo.png" alt="Blue" width="400">
 </p>
 <br />
 
 **theme_red()**<br />
 ```R
-# left
 ggplot(iris, aes(Sepal.Length, Petal.Width, color = Species)) + geom_point() + theme_red()
-
-# right
-ggplot(iris, aes(Sepal.Length, fill = Species)) + geom_histogram() + theme_red()
 ```
 <p align="center">
 <img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/red.png" alt="Red" width="400">
+</p>
+<br />
+
+```R
+ggplot(iris, aes(Sepal.Length, fill = Species)) + geom_histogram() + theme_red()
+```
+<p align="center">
 <img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/red_histo.png" alt="Red" width="400">
 </p>
 <br />
