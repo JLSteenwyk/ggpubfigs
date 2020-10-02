@@ -79,7 +79,7 @@ ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_ma
 <br />
 
 ```R
-pal <- friendly_pal("contrast_three", 50, type = "continuous")<br />
+pal <- friendly_pal("contrast_three", 50, type = "continuous")
 image(volcano, col = pal)
 ```
 <p align="center">
