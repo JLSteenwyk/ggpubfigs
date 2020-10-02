@@ -8,4 +8,5 @@ theme_black()
 }
 \description{
 Black theme for ggplot2 plots. See \href{https://ggplot2.tidyverse.org/reference/theme.html}{theme()} for complete documentation.
+Complete list of palettes
 }

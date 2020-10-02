@@ -2,3 +2,9 @@
 
 export(friendly_pal)
 export(friendly_pals)
+export(theme_black)
+export(theme_blue)
+export(theme_grey)
+export(theme_grid)
+export(theme_red)
+export(theme_simple)

@@ -2,6 +2,8 @@
 #'
 #' @description
 #' Red theme for ggplot2 plots. See \href{https://ggplot2.tidyverse.org/reference/theme.html}{theme()} for complete documentation.
+#'
+#' @export
 theme_red <- function () { 
     theme_bw(base_size=12, base_family="Arial") %+replace% 
         theme(
