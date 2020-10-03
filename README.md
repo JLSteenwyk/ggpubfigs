@@ -28,6 +28,7 @@ Importantly, ggpubfigs implements themes and color palettes that are both aesthe
 [Themes](#themes)<br />
 [FAQ](#faq)<br />
 [Acknowledgements](#acknowledgements)
+[Bonus][#bonus]<br />
 <br /><br />
 
 ---
@@ -204,3 +205,18 @@ Yes! Submissions are encouraged, please feel free to contact me via  [twitter](h
 ## Acknowledgements
 I would like to thank the blooming R community for all the very helpful online forums, discussions, and open source books that have helped me learn R.<br /><br />
 I would also like to acknowledge that some of the example usage and color palette code was developed based on open source code from the [wes anderson](https://github.com/karthik/wesanderson) color palette package. 
+
+---
+## Bonus
+
+Here is a tutorial on how to create a violin, boxplot, dot plot hybrid. The function geom_violinhalf() comes from the following [link](https://easystats.github.io/see/reference/geom_violinhalf.html).
+
+```R
+ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven")) + geom_boxplot(position=position_nudge(x=-.1), width=0.1, outlier.shape=NA) + geom_jitter(alpha=.5, width=.025, size=2)
+```
+<p align="center">
+<img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/violin_boxplot_dotplot_hybrid.png" alt="hybrid" width="400">
+</p>
+<br />
+
+
