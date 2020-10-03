@@ -28,7 +28,7 @@ Importantly, ggpubfigs implements themes and color palettes that are both aesthe
 [Themes](#themes)<br />
 [FAQ](#faq)<br />
 [Acknowledgements](#acknowledgements)<br />
-[Bonus][#bonus]
+[Bonus](#bonus)
 <br /><br />
 
 ---
