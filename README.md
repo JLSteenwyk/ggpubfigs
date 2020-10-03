@@ -46,10 +46,10 @@ These *quick start* examples demonstrate how to implement two aesthetically plea
 
 ```R
 # using the "ito_seven" color palette and simple_theme()
-ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("ito_seven")) + theme_simple()
+ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("ito_seven")) + theme_big_simple()
 ```
 <p align="center">
-<img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/ito_simple.png" alt="ito_simple" width="400">
+<img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/ito_big_simple.png" alt="ito_simple" width="400">
 </p>
 <br />
 
