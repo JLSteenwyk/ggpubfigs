@@ -45,7 +45,7 @@ library(ggpubfigs)
 These *quick start* examples demonstrate how to implement two aesthetically pleasing themes and color palettes. 
 
 ```R
-# using the "ito_seven" color palette and simple_theme()
+# using the "ito_seven" color palette and theme_big_simple()
 ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("ito_seven")) + theme_big_simple()
 ```
 <p align="center">
