@@ -222,7 +222,7 @@ Yes! Submissions are encouraged, please feel free to contact me via  [twitter](h
 I would like to thank the blooming R community for all the very helpful online forums, discussions, and open source books that have helped me learn R.<br /><br />
 I would also like to acknowledge that some of the example usage and color palette code was developed based on open source code from the [wes anderson](https://github.com/karthik/wesanderson) color palette package. 
 
----
+<!-- ---
 ## Bonus
 
 Here is a tutorial on how to create a violin, boxplot, dot plot hybrid. The function geom_violinhalf() comes from the following [link](https://easystats.github.io/see/reference/geom_violinhalf.html).
@@ -237,6 +237,6 @@ ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) +
 <p align="center">
 <img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/violin_boxplot_dotplot_hybrid.png" alt="hybrid" width="400">
 </p>
-<br />
+<br /> -->
 
 
