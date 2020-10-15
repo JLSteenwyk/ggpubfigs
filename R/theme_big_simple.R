@@ -5,7 +5,7 @@
 #'
 #' @export
 theme_big_simple <- function () { 
-    theme_bw(base_size=16, base_family="Arial") %+replace% 
+    theme_bw(base_size=16, base_family="") %+replace% 
         theme(
             plot.background = element_rect(fill="transparent", colour=NA), 
             legend.background = element_rect(fill="transparent", colour=NA),

@@ -5,7 +5,7 @@
 #'
 #' @export
 theme_red <- function () { 
-    theme_bw(base_size=12, base_family="Arial") %+replace% 
+    theme_bw(base_size=12, base_family="") %+replace% 
         theme(
             plot.background = element_rect(fill="firebrick4", colour=NA), 
             legend.background = element_rect(fill="transparent", colour=NA),
