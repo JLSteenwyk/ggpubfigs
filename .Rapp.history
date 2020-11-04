@@ -1,253 +1,433 @@
-p<-ggplot(ToothGrowth, aes(factor(dose), len, fill=factor(dose))) + geom_boxjitter()
-p
-df <- data.frame(score = rgamma(150, 4, 1), #
-                 gender = sample(c("M", "F"), 150, replace = TRUE), #
-                genotype = factor(sample(1:3, 150, replace = TRUE)))
-df
-head(df)
-head(ToothGrowth)
-devtools::load_all()
-p<-ggplot(ToothGrowth, aes(factor(dose), len, fill=factor(dose))) + geom_violin_boxplot()
-p
-rlang::last_error()
-p<-ggplot(ToothGrowth, aes(factor(dose), len, fill=factor(dose))) %>% geom_violin_boxplot()
-p<-ggplot(ToothGrowth, aes(factor(dose), len, fill=factor(dose))) + geom_violin_boxplot()
-p<-ggplot(ToothGrowth, aes(factor(dose), len, fill=factor(dose)))
-p + geom_violin_boxplot()
-devtools::load_all()
-p<-ggplot(ToothGrowth, aes(factor(dose), len, fill=factor(dose))) + geom_violin_boxplot()
-p
-devtools::load_all()
-geom_violin_boxplot(ToothGrowth, ToothGrowth$dose, ToothGrowth$dose)
-geom_violin_boxplot(ToothGrowth, dose, len)
-geom_violin_boxplot(ToothGrowth, ToothGrowth$dose, ToothGrowth$len)
-geom_violin_boxplot(ToothGrowth, ToothGrowth$dose, ToothGrowth$len)
-devtools::load_all()
-geom_violin_boxplot(ToothGrowth, ToothGrowth$dose, ToothGrowth$len)
-devtools::load_all()
-geom_violin_boxplot(ToothGrowth, ToothGrowth$dose, ToothGrowth$len)
-geom_violin_boxplot(ToothGrowth, ToothGrowth$dose, ToothGrowth$len)
-geom_violin_boxplot(ToothGrowth, ToothGrowth$dose, ToothGrowth$len)
-geom_violin_boxplot(ToothGrowth, ToothGrowth$dose, ToothGrowth$len)
-p<-geom_violin_boxplot(ToothGrowth, ToothGrowth$dose, ToothGrowth$len)
-p
-p
-devtools::load_all()
-p<-geom_violin_boxplot(ToothGrowth, ToothGrowth$dose, ToothGrowth$len)
-p
-devtools::load_all()
-p<-geom_violin_boxplot(ToothGrowth, ToothGrowth$dose, ToothGrowth$len)
-p
-devtools::load_all()
-p<-geom_violin_boxplot(ToothGrowth, ToothGrowth$dose, ToothGrowth$len)
-p
-devtools::load_all()
-p<-geom_violin_boxplot(ToothGrowth, ToothGrowth$dose, ToothGrowth$len)
-p
-devtools::load_all()
-p<-geom_violin_boxplot(ToothGrowth, ToothGrowth$dose, ToothGrowth$len)
-p
-devtools::load_all()
-p<-geom_violin_boxplot(ToothGrowth, ToothGrowth$dose, ToothGrowth$len)
-p
-devtools::load_all()
-p<-geom_violin_boxplot(ToothGrowth, ToothGrowth$dose, ToothGrowth$len)
-p
-devtools::load_all()
-p<-geom_violin_boxplot(ToothGrowth, ToothGrowth$dose, ToothGrowth$len)
-p
-devtools::load_all()
-p<-geom_violin_boxplot(ToothGrowth, ToothGrowth$dose, ToothGrowth$len)
-p
-devtools::load_all()
-devtools::load_all()
-p<-geom_violin_boxplot(ToothGrowth, ToothGrowth$dose, ToothGrowth$len)
-p
-devtools::load_all()
-p<-geom_violin_boxplot(ToothGrowth, ToothGrowth$dose, ToothGrowth$len)
-p
-devtools::load_all()
-p<-geom_violin_boxplot(ToothGrowth, ToothGrowth$dose, ToothGrowth$len)
-p
-devtools::load_all()
-p<-geom_violin_boxplot(ToothGrowth, ToothGrowth$dose, ToothGrowth$len)
-p
-devtools::load_all()
-p<-geom_violin_boxplot(ToothGrowth, ToothGrowth$dose, ToothGrowth$len)
-p
-devtools::load_all()
-p<-geom_violin_boxplot(ToothGrowth, ToothGrowth$dose, ToothGrowth$len)
-p
-devtools::load_all()
-p<-geom_violin_boxplot(ToothGrowth, ToothGrowth$dose, ToothGrowth$len)
-p
-devtools::load_all()
-p<-geom_violin_boxplot(ToothGrowth, ToothGrowth$dose, ToothGrowth$len)
-p
-devtools::load_all()
-p<-geom_violin_boxplot(ToothGrowth, ToothGrowth$dose, ToothGrowth$len)
-p
-devtools::load_all()
-p<-geom_violin_boxplot(ToothGrowth, ToothGrowth$dose, ToothGrowth$len)
-p
-devtools::load_all()
-p<-geom_violin_boxplot(ToothGrowth, ToothGrowth$dose, ToothGrowth$len)
-p
-devtools::load_all()
-p<-geom_violin_boxplot(ToothGrowth, ToothGrowth$dose, ToothGrowth$len)
-p
-devtools::load_all()
-p<-geom_violin_boxplot(ToothGrowth, ToothGrowth$dose, ToothGrowth$len)
-p
-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf()#
-  geom_violinhalf()
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf()
-p
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven"))
-p
-devtools::load_all()
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven"))
-p
-devtools::load_all()
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven"))
-p
-rlang::last_error()
-devtools::load_all()
-devtools::load_all()
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven"))
-p
-rlang::last_error()
-devtools::load_all()
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven"))
-p
-devtools::load_all()
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven"))
-p
-devtools::load_all()
-devtools::load_all()
-devtools::load_all()
-p
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven"))
-p
-devtools::load_all()
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven"))
-[]
-p
-devtools::load_all()
-[]
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven"))
-p
-devtools::load_all()
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven"))
-p
-devtools::load_all()
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven")) + geom_boxjitter()
-devtools::load_all()
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven")) + geom_boxjitter()
-p
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven"))
-p
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven")) + geom_boxplot()
-p
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven")) + geom_boxplot(position=position_nudge(x=.1))
-p
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven")) + geom_boxplot(position=position_nudge(x=-.05))
-p
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven")) + geom_boxplot(position=position_nudge(x=-.05), width=0.5)
-p
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven")) + geom_boxplot(position=position_nudge(x=-.05), width=0.2)
-p
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven")) + geom_boxplot(position=position_nudge(x=-.05), width=0.1)
-p
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven")) + geom_boxplot(position=position_nudge(x=-.05), width=0.1, outlier.shape=NA) + geom_jitter(position=position_nudge(x=-.05), width=0.1)
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven")) + geom_boxplot(position=position_nudge(x=-.05), width=0.1, outlier.shape=NA) + geom_jitter(position=position_nudge(x=-.05))
-p
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven")) + geom_boxplot(position=position_nudge(x=-.05), width=0.1, outlier.shape=NA) + geom_jitter()
-p
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven")) + geom_boxplot(position=position_nudge(x=-.05), width=0.1, outlier.shape=NA) + geom_jitter(width=.1)
-p
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven")) + geom_boxplot(position=position_nudge(x=-.05), width=0.1, outlier.shape=NA) + geom_jitter(width=-.05)
-p
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven")) + geom_boxplot(position=position_nudge(x=-.05), width=0.1, outlier.shape=NA) + geom_point(alpha==.5)
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven")) + geom_boxplot(position=position_nudge(x=-.05), width=0.1, outlier.shape=NA) + geom_point(alpha=.5)
-p
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven")) + geom_boxplot(position=position_nudge(x=-.1), width=0.1, outlier.shape=NA) + geom_point(alpha=.5)
-load_all()
-devtools::load_all()
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven")) + geom_boxplot(position=position_nudge(x=-.1), width=0.1, outlier.shape=NA) + geom_point(alpha=.5)
-p
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven")) + geom_boxplot(position=position_nudge(x=-.1), width=0.1, outlier.shape=NA) + geom_jitter(alpha=.5)
-p
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven")) + geom_boxplot(position=position_nudge(x=-.1), width=0.1, outlier.shape=NA) + geom_jitter(alpha=.5, width=.1)
-p
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven")) + geom_boxplot(position=position_nudge(x=-.1), width=0.1, outlier.shape=NA) + geom_jitter(alpha=.5, width=.05)
-p
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven")) + geom_boxplot(position=position_nudge(x=-.1), width=0.1, outlier.shape=NA) + geom_jitter(alpha=.5, width=.05)
-p
-devtools::load_all()
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven")) + geom_boxplot(position=position_nudge(x=-.1), width=0.1, outlier.shape=NA) + geom_jitter(alpha=.5, width=.05)
-p
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven")) + geom_boxplot(position=position_nudge(x=-.1), width=0.1, outlier.shape=NA) + geom_jitter(alpha=.5, width=.025)
-p
-p
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven")) + geom_boxplot(position=position_nudge(x=-.1), width=0.1, outlier.shape=NA) + geom_jitter(alpha=.5, width=.025, size=2)
-p
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven")) + geom_boxplot(position=position_nudge(x=-.1), width=0.1, outlier.shape=NA) + geom_jitter(alpha=.5, width=.025, size=3)
-p
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven")) + geom_boxplot(position=position_nudge(x=-.1), width=0.1, outlier.shape=NA) + geom_jitter(alpha=.5, width=.025, size=2.5)
-p
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven")) + geom_boxplot(position=position_nudge(x=-.1), width=0.1, outlier.shape=NA) + geom_jitter(alpha=.5, width=.025, size=2)
-p
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven")) + geom_boxplot(position=position_nudge(x=-.1), width=0.1, outlier.shape=NA) + geom_jitter(alpha=.5, width=.025, size=2, color=aes(Species))
-p
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven")) + geom_boxplot(position=position_nudge(x=-.1), width=0.1, outlier.shape=NA) + geom_jitter(alpha=.5, width=.025, size=2, color= iris$Species)
-p
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven")) + geom_boxplot(position=position_nudge(x=-.1), width=0.1, outlier.shape=NA) + geom_jitter(alpha=.5, width=.025, size=2)
-p
-devtools::load_all()
-devtools::load_all()
-devtools::load_all()
-devtools::load_all()
-devtools::load_all()
-devtools::load_all()
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven"))
-p
-devtools::load_all()
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven"))
-p
-devtools::load_all()
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven"))
-rlang::last_error()
-devtools::load_all()
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_boxhalf()
-rlang::last_error()
-devtools::load_all()
-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven")) + geom_boxplot(position=position_nudge(x=-.1), width=0.1, outlier.shape=NA) + geom_jitter(alpha=.5, width=.025, size=2)
-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven")) + geom_boxplot(position=position_nudge(x=-.1), width=0.1, outlier.shape=NA) + geom_jitter(alpha=.5, width=.025, size=2)
-devtools::load_all()
-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven"))
-devtools::load_all()
-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven")) + geom_boxplot(position=position_nudge(x=-.1), width=0.1, outlier.shape=NA) + geom_jitter(alpha=.5, width=.025, size=2)
-devtools::load_all()
-devtools::load_all()
-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven")) + geom_boxplot(position=position_nudge(x=-.1), width=0.1, outlier.shape=NA) + geom_jitter(alpha=.5, width=.025, size=2)
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven")) + geom_boxplot(position=position_nudge(x=-.1), width=0.1, outlier.shape=NA) + geom_jitter(alpha=.5, width=.025, size=2)
-p
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven"))
-p
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven")) + geom_boxjitter()
-devtools::load_all()
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven")) + geom_boxjitter()
-devtools::load_all()
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven")) + geom_boxjitter()
-p
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven")) + geom_boxplot(position=position_nudge(x=-.1), width=0.1, outlier.shape=NA) + geom_jitter(alpha=.5, width=.025, size=2)
-p
-png(filename="master/docs/_static/violin_boxplot_dotplot_hybrid.png")
-p
+library(ggplot2)
+install.packages(ggplot2)
+install.packages("ggplot2", dep=T)
+install.packages("ggpubfigs")
+library(ggplot2)
+library(ggpubfigs)
+ggplot(mtcars, aes(carb, fill=cyl)) + geom_bar() + scale_fill_manual(values = friendly_pal("ito_seven")) + theme_big_simple()
+devtools::install_github("JLSteenwyk/ggpubfigs")
+devtools::install_github("JLSteenwyk/ggpubfigs", force=TRUE)
+library(ggpubfigs)
+ggplot(mtcars, aes(carb, fill=cyl)) + geom_bar() + scale_fill_manual(values = friendly_pal("ito_seven")) + theme_big_simple()
+?ggpubfigs
+??ggpubfigs
+ls("package: ggpubfigs")
+ls("package:ggpubfigs")
+setwd("Desktop/GITHUB/ggpubfigs/")
+devtools::document()
+setwd("../../../")
+devtools::install_github("JLSteenwyk/ggpubfigs", force=TRUE)
+library(ggpubfigs)
+ls("package:ggpubfigs")
+ggplot(mtcars, aes(carb, fill=cyl)) + geom_bar() + scale_fill_manual(values = friendly_pal("ito_seven")) + theme_big_simple()
+ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("ito_seven")) + theme_big_simple()
+head(mtcars)
+ggplot(mtcars, aes(carb, fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("ito_seven")) + theme_big_simple()
+png("Desktop/temp.png")
+ggplot(mtcars, aes(carb, fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("ito_seven")) + theme_big_simple()
 dev.off()
+png("Desktop/temp.png", width=1024px, height=512px)
+jpg("Desktop/temp.jpg", width=1024px, height=512px)
+jpg("Desktop/temp.jpg", width=1024, height=512)
+jpeg("Desktop/temp.jpg", width=1024, height=512)
+ggplot(mtcars, aes(carb, fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("ito_seven")) + theme_big_simple()
+dev.off()
+jpeg("Desktop/temp.jpg")
+ggplot(mtcars, aes(carb, fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("ito_seven")) + theme_big_simple()
+dev.off()
+install.packages("ggtree", dep=T)
+if (!requireNamespace("BiocManager", quietly = TRUE))#
+    install.packages("BiocManager")#
+#
+BiocManager::install("ggtree")
+if (!requireNamespace("BiocManager", quietly = TRUE))#
+    install.packages("BiocManager")
+install.packages("BiocManager", dep =T)
+install.packages("ggtree")
+?p.adjust()
+library(ggplot2)
+library(ggpubfigs)
+ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("ito_seven")) + theme_big_simple()
+pdf("Desktop/test.pdf")
+ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("ito_seven")) + theme_big_simple()
+dev.off()
+library(ggplot2)
+library(ggpubfigs)
+head(iris)
+ggplot2(iris, aes(Sepal.Length, Petal.Length, fill=Species)) + geom_point() + theme_big_simple()
+ggplot(iris, aes(Sepal.Length, Petal.Length, fill=Species)) + geom_point() + theme_big_simple()
+ggplot(iris, aes(Sepal.Length, Petal.Length, color=Species)) + geom_point() + theme_big_simple()
+ggplot(iris, aes(Sepal.Length, Petal.Length, color=Species)) + geom_point() + theme_big_simple() + scale_fill_manual(values = friendly_pal("bright_seven"))
+ggplot(iris, aes(Sepal.Length, Petal.Length, color=Species)) + geom_point() + theme_big_simple() + scale_color_manual(values = friendly_pal("ito_seven"))
+ggplot(iris, aes(Sepal.Length, Petal.Length, color=Species)) + geom_point(size=10) + theme_big_simple() + scale_color_manual(values = friendly_pal("ito_seven"))
+ggplot(iris, aes(Sepal.Length, Petal.Length, color=Species)) + geom_point(size=5) + theme_big_simple() + scale_color_manual(values = friendly_pal("ito_seven"))
+pdf("Desktop/iris.pdf")
+ggplot(iris, aes(Sepal.Length, Petal.Length, color=Species)) + geom_point() + theme_big_simple() + scale_color_manual(values = friendly_pal("ito_seven"))
+dev.off()
+ggplot(iris, aes(Sepal.Length, Petal.Length, color=Species)) + geom_point(size=5) + theme_big_simple() + scale_color_manual(values = friendly_pal("ito_seven"))
+pdf("Desktop/iris.pdf")
+ggplot(iris, aes(Sepal.Length, Petal.Length, color=Species)) + geom_point(size=5) + theme_big_simple() + scale_color_manual(values = friendly_pal("ito_seven"))
+dev.off()
+install.packages("twitteR", dep = T)#
+install.packages("tidytext", dep = T)#
+install.packages("dplyr", dep = T)#
+install.packages("ggplot2", dep = T)
+library(twitteR)
+library(c(rtweet,dplyr, tidyr, tidytext))
+library(c("rtweet","dplyr", "tidyr", "tidytext"))
+library(rtweet)
+library(dplyr)
+library(tidyr)
+library(tidytext)
+search_tweets("#Canada", n=100, include_rts=FALSE)
+country1<-search_tweets("#Canada", n=100, include_rts=FALSE)
+country1<-search_tweets("#Canada", n=100, include_rts=FALSE, retryonratelimit = TRUE)
+head(country1)
+tweets.Country1 <-country1 %>% select(screen_name, text)
+head(tweets.Country)
+head(tweets.Country1)
+head(tweets.Country1$text)
+tweets.Country1$stripped_text1<-gsub("http\\s+","", tweets.Country1$text)
+tweets.Country1_stem <- tweets.Country1 %>% select(stripped_text1) %>% unnest_tokens(word, stripped_text1)
+head(tweets.Country1_stem)
+cleaned_tweets.Country1 <- tweets.Country1_stem %>% anti_join(stop_words)
+head(cleaned_tweets.Country1)
+cleaned_tweets.Country1 %>% count(word, sort=TRUE) %>% top_n(10) %>% mutate(word=reorder(word, n)) %>% ggplot(aes(x=word,y=n)) + geom_col()+xlab(NULL)+ coord_flip() + theme_classic() + labs (x="Count", y="Unique words")
+library(ggplot2)
+cleaned_tweets.Country1 %>% count(word, sort=TRUE) %>% top_n(10) %>% mutate(word=reorder(word, n)) %>% ggplot(aes(x=word,y=n)) + geom_col()+xlab(NULL)+ coord_flip() + theme_classic() + labs (x="Count", y="Unique words")
+cleaned_tweets.Country1 %>% inner_join(get_sentiments("afinn")) %>% count(word, sentiment, sort=TRUE) %>% ungroup()
+cleaned_tweets.Country1 %>% inner_join(get_sentiments("afinn"))
+cleaned_tweets.Country1 %>% inner_join(get_sentiments("afinn")) %>% count(word, sentiment, sort=TRUE)
+cleaned_tweets.Country1 %>% inner_join(get_sentiments("afinn")) %>% count(word, value, sort=TRUE)
+cleaned_tweets.Country1 %>% inner_join(get_sentiments("afinn")) %>% count(word, value, sort=TRUE) %>% ungroup()
+library(rtweet)#
+library(dplyr)#
+library(tidyr)#
+library(tidytext)#
+library(ggplot2)#
+library(syuzhet)#
+library(ggpubfigs)#
+library(sentimentr)
+## get tweet data and organize into organic, replies, and retweets#
+# get tweets from user#
+steenwyk <- get_timeline("@jlsteenwyk", n= 3200)#
+# remove retweets#
+steenwyk_organic <- steenwyk[steenwyk$is_retweet==FALSE, ] #
+# remove replies#
+steenwyk_organic <- subset(#
+    steenwyk_organic, is.na(steenwyk_organic$reply_to_status_id)#
+) #
+# get retweets and replies#
+steenwyk_retweets <- steenwyk[steenwyk$is_retweet==TRUE,]#
+steenwyk_replies <- subset(steenwyk, !is.na(steenwyk$reply_to_status_id))
+## determine number of organic, replies, and retweets & save to a plot #
+replies_num<-dim(steenwyk_replies)[1]#
+retweets_num<-dim(steenwyk_retweets)[1]#
+organic_num<-dim(steenwyk_organic)[1]
+# create data frame of tweet counts#
+tweets_counts_by_type <- data.frame(#
+  category=c("Organic", "Retweets", "Replies"),#
+  count=c(organic_num, retweets_num, replies_num)#
+)
+# determine descriptive statistics#
+tweets_counts_by_type$fraction = tweets_counts_by_type$count / sum(tweets_counts_by_type$count)#
+tweets_counts_by_type$percentage = tweets_counts_by_type$count / sum(tweets_counts_by_type$count) * 100#
+tweets_counts_by_type$ymax = cumsum(tweets_counts_by_type$fraction)#
+tweets_counts_by_type$ymin = c(0, head(tweets_counts_by_type$ymax, n=-1))#
+#
+# round to two decimal points#
+tweets_counts_by_type[,-1] <- round(tweets_counts_by_type[,-1], 2)#
+#
+# create legend label #
+Type_of_Tweet <- paste(tweets_counts_by_type$category, tweets_counts_by_type$percentage, "%")
+ggplot(tweets_counts_by_type, aes(ymax=ymax, ymin=ymin, xmax=4, xmin=3, fill=Type_of_Tweet)) +#
+  geom_rect() +#
+  coord_polar(theta="y") + #
+  xlim(c(2, 4)) +#
+  theme_void() +#
+  theme(legend.position = "right")  +#
+  scale_fill_manual(values = friendly_pal("ito_seven"))
+## conduct sentiment analysis#
+# remove stop chars#
+steenwyk_organic$text <-  gsub("https\\S*", "", steenwyk_organic$text)#
+steenwyk_organic$text <-  gsub("@\\S*", "", steenwyk_organic$text) #
+steenwyk_organic$text  <-  gsub("amp", "", steenwyk_organic$text) #
+steenwyk_organic$text  <-  gsub("[\r\n]", "", steenwyk_organic$text)#
+steenwyk_organic$text  <-  gsub("[[:punct:]]", "", steenwyk_organic$text)#
+# remove stop words#
+steenwyk_organic_tweets <- steenwyk_organic %>%#
+  select(text) %>%#
+  unnest_tokens(word, text)#
+steenwyk_organic_tweets <- steenwyk_organic_tweets %>%#
+  anti_join(stop_words)
+# Converting tweets to ASCII to trackle strange characters#
+steenwyk_organic_tweets_ascii <- iconv(steenwyk_organic_tweets, from="UTF-8", to="ASCII", sub="")#
+# removing retweets, in case needed #
+steenwyk_organic_tweets_ascii <-gsub("(RT|via)((?:\\b\\w*@\\w+)+)","",steenwyk_organic_tweets_ascii)#
+# removing mentions, in case needed#
+steenwyk_organic_tweets_ascii <-gsub("@\\w+","",steenwyk_organic_tweets_ascii)
+ew_sentiment<-get_nrc_sentiment((steenwyk_organic_tweets_ascii))#
+sentimentscores<-data.frame(colSums(ew_sentiment[,]))#
+names(sentimentscores) <- "Score"#
+sentimentscores <- cbind("sentiment"=rownames(sentimentscores),sentimentscores)#
+rownames(sentimentscores) <- NULL
+head(sentimentscores)
+sentimentscores
+ggplot(sentimentscores, aes(sentiment, Score)) + geom_bar(stat='identity')
+ggplot(sentimentscores, aes(sentiment, Score)) + geom_bar(stat='identity') + theme_big_simple()
+ggplot(sentimentscores, aes(sentiment, Score)) + geom_bar(stat='identity') + theme_big_simple() + scale_fill_manual(values = friendly_pal("ito_seven"))
+ggplot(sentimentscores, aes(sentiment, Score, fill=sentiment)) + geom_bar(stat='identity') + theme_big_simple() + scale_fill_manual(values = friendly_pal("ito_seven"))
+ggplot(sentimentscores, aes(sentiment, Score, fill=sentiment)) + geom_bar(stat='identity') + theme_big_simple() + scale_fill_manual(values = c(friendly_pal("ito_seven"), c(friendly_pal("muted_nine")))
+)
+ggplot(sentimentscores, aes(sentiment, Score, fill=sentiment)) + geom_bar(stat='identity') + theme_big_simple()
+ggplot(sentimentscores, aes(sentiment, Score, fill=sentiment)) + geom_bar(stat='identity') + theme_big_simple() + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+ggplot(sentimentscores, aes(sentiment, Score, fill=sentiment)) + geom_bar(stat='identity') + theme_big_simple() + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) + theme(legend. title = element_blank())
+ggplot(sentimentscores, aes(sentiment, Score, fill=sentiment)) + geom_bar(stat='identity') + theme_big_simple() + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) + theme(legend.title = element_blank())
+ggplot(sentimentscores, aes(sentiment, Score, fill=sentiment)) + geom_bar(stat='identity') + theme_big_simple() + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) + theme(legend. position = "none")
+ggplot(sentimentscores, aes(sentiment, Score, fill=sentiment)) + geom_bar(stat='identity') + theme_big_simple() + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) + theme(legend.position = "none")
+library(rtweet)#
+library(dplyr)#
+library(tidyr)#
+library(tidytext)#
+library(ggplot2)#
+library(syuzhet)#
+library(ggpubfigs)#
+library(sentimentr)#
+#
+## get tweet data and organize into organic, replies, and retweets#
+# get tweets from user#
+steenwyk <- get_timeline("@jlsteenwyk", n= 3200)#
+# remove retweets#
+steenwyk_organic <- steenwyk[steenwyk$is_retweet==FALSE, ] #
+# remove replies#
+steenwyk_organic <- subset(#
+    steenwyk_organic, is.na(steenwyk_organic$reply_to_status_id)#
+) #
+# get retweets and replies#
+steenwyk_retweets <- steenwyk[steenwyk$is_retweet==TRUE,]#
+steenwyk_replies <- subset(steenwyk, !is.na(steenwyk$reply_to_status_id))#
+#
+## determine number of organic, replies, and retweets & save to a plot #
+replies_num<-dim(steenwyk_replies)[1]#
+retweets_num<-dim(steenwyk_retweets)[1]#
+organic_num<-dim(steenwyk_organic)[1]#
+#
+# create data frame of tweet counts#
+tweets_counts_by_type <- data.frame(#
+  category=c("Organic", "Retweets", "Replies"),#
+  count=c(organic_num, retweets_num, replies_num)#
+)#
+#
+# determine descriptive statistics#
+tweets_counts_by_type$fraction = tweets_counts_by_type$count / sum(tweets_counts_by_type$count)#
+tweets_counts_by_type$percentage = tweets_counts_by_type$count / sum(tweets_counts_by_type$count) * 100#
+tweets_counts_by_type$ymax = cumsum(tweets_counts_by_type$fraction)#
+tweets_counts_by_type$ymin = c(0, head(tweets_counts_by_type$ymax, n=-1))#
+#
+# round to two decimal points#
+tweets_counts_by_type[,-1] <- round(tweets_counts_by_type[,-1], 2)#
+#
+# create legend label #
+Type_of_Tweet <- paste(tweets_counts_by_type$category, tweets_counts_by_type$percentage, "%")#
+#
+ggplot(tweets_counts_by_type, aes(ymax=ymax, ymin=ymin, xmax=4, xmin=3, fill=Type_of_Tweet)) +#
+  geom_rect() +#
+  coord_polar(theta="y") + #
+  xlim(c(2, 4)) +#
+  theme_void() +#
+  theme(legend.position = "right")  +#
+  scale_fill_manual(values = friendly_pal("ito_seven"))#
+## conduct sentiment analysis#
+# remove stop chars#
+steenwyk_organic$text <-  gsub("https\\S*", "", steenwyk_organic$text)#
+steenwyk_organic$text <-  gsub("@\\S*", "", steenwyk_organic$text) #
+steenwyk_organic$text  <-  gsub("amp", "", steenwyk_organic$text) #
+steenwyk_organic$text  <-  gsub("[\r\n]", "", steenwyk_organic$text)#
+steenwyk_organic$text  <-  gsub("[[:punct:]]", "", steenwyk_organic$text)#
+# remove stop words#
+steenwyk_organic_tweets <- steenwyk_organic %>%#
+  select(text) %>%#
+  unnest_tokens(word, text)#
+steenwyk_organic_tweets <- steenwyk_organic_tweets %>%#
+  anti_join(stop_words)
+bing_lex <- get_sentiments("bing")#
+#
+fn_sentiment <- steenwyk_organic_tweets %>% left_join(bing_lex)#
+#
+fn_sentiment %>% filter(!is.na(sentiment)) %>% group_by(sentiment) %>% summarise(n=n())
+head(fn_sentiment)
+head(steenwyk_organic_tweets)
+library(rtweet)#
+library(dplyr)#
+library(tidyr)#
+library(tidytext)#
+library(ggplot2)#
+library(syuzhet)#
+library(ggpubfigs)#
+library(sentimentr)#
+#
+## get tweet data and organize into organic, replies, and retweets#
+# get tweets from user#
+steenwyk <- get_timeline("@wendy_wcp", n= 3200)#
+# remove retweets#
+steenwyk_organic <- steenwyk[steenwyk$is_retweet==FALSE, ] #
+# remove replies#
+steenwyk_organic <- subset(#
+    steenwyk_organic, is.na(steenwyk_organic$reply_to_status_id)#
+) #
+# get retweets and replies#
+steenwyk_retweets <- steenwyk[steenwyk$is_retweet==TRUE,]#
+steenwyk_replies <- subset(steenwyk, !is.na(steenwyk$reply_to_status_id))#
+#
+## determine number of organic, replies, and retweets & save to a plot #
+replies_num<-dim(steenwyk_replies)[1]#
+retweets_num<-dim(steenwyk_retweets)[1]#
+organic_num<-dim(steenwyk_organic)[1]#
+#
+# create data frame of tweet counts#
+tweets_counts_by_type <- data.frame(#
+  category=c("Organic", "Retweets", "Replies"),#
+  count=c(organic_num, retweets_num, replies_num)#
+)#
+#
+# determine descriptive statistics#
+tweets_counts_by_type$fraction = tweets_counts_by_type$count / sum(tweets_counts_by_type$count)#
+tweets_counts_by_type$percentage = tweets_counts_by_type$count / sum(tweets_counts_by_type$count) * 100#
+tweets_counts_by_type$ymax = cumsum(tweets_counts_by_type$fraction)#
+tweets_counts_by_type$ymin = c(0, head(tweets_counts_by_type$ymax, n=-1))#
+#
+# round to two decimal points#
+tweets_counts_by_type[,-1] <- round(tweets_counts_by_type[,-1], 2)#
+#
+# create legend label #
+Type_of_Tweet <- paste(tweets_counts_by_type$category, tweets_counts_by_type$percentage, "%")#
+#
+ggplot(tweets_counts_by_type, aes(ymax=ymax, ymin=ymin, xmax=4, xmin=3, fill=Type_of_Tweet)) +#
+  geom_rect() +#
+  coord_polar(theta="y") + #
+  xlim(c(2, 4)) +#
+  theme_void() +#
+  theme(legend.position = "right")  +#
+  scale_fill_manual(values = friendly_pal("ito_seven"))#
+## conduct sentiment analysis#
+# remove stop chars#
+steenwyk_organic$text <-  gsub("https\\S*", "", steenwyk_organic$text)#
+steenwyk_organic$text <-  gsub("@\\S*", "", steenwyk_organic$text) #
+steenwyk_organic$text  <-  gsub("amp", "", steenwyk_organic$text) #
+steenwyk_organic$text  <-  gsub("[\r\n]", "", steenwyk_organic$text)#
+steenwyk_organic$text  <-  gsub("[[:punct:]]", "", steenwyk_organic$text)#
+# remove stop words#
+steenwyk_organic_tweets <- steenwyk_organic %>%#
+  select(text) %>%#
+  unnest_tokens(word, text)#
+steenwyk_organic_tweets <- steenwyk_organic_tweets %>%#
+  anti_join(stop_words)
+bing_lex <- get_sentiments("bing")#
+#
+fn_sentiment <- steenwyk_organic_tweets %>% left_join(bing_lex)#
+#
+fn_sentiment %>% filter(!is.na(sentiment)) %>% group_by(sentiment) %>% summarise(n=n())
+library(rtweet)#
+library(dplyr)#
+library(tidyr)#
+library(tidytext)#
+library(ggplot2)#
+library(syuzhet)#
+library(ggpubfigs)#
+library(sentimentr)#
+#
+## get tweet data and organize into organic, replies, and retweets#
+# get tweets from user#
+steenwyk <- get_timeline("@realdonaldtrump", n= 3200)#
+# remove retweets#
+steenwyk_organic <- steenwyk[steenwyk$is_retweet==FALSE, ] #
+# remove replies#
+steenwyk_organic <- subset(#
+    steenwyk_organic, is.na(steenwyk_organic$reply_to_status_id)#
+) #
+# get retweets and replies#
+steenwyk_retweets <- steenwyk[steenwyk$is_retweet==TRUE,]#
+steenwyk_replies <- subset(steenwyk, !is.na(steenwyk$reply_to_status_id))#
+#
+## determine number of organic, replies, and retweets & save to a plot #
+replies_num<-dim(steenwyk_replies)[1]#
+retweets_num<-dim(steenwyk_retweets)[1]#
+organic_num<-dim(steenwyk_organic)[1]#
+#
+# create data frame of tweet counts#
+tweets_counts_by_type <- data.frame(#
+  category=c("Organic", "Retweets", "Replies"),#
+  count=c(organic_num, retweets_num, replies_num)#
+)#
+#
+# determine descriptive statistics#
+tweets_counts_by_type$fraction = tweets_counts_by_type$count / sum(tweets_counts_by_type$count)#
+tweets_counts_by_type$percentage = tweets_counts_by_type$count / sum(tweets_counts_by_type$count) * 100#
+tweets_counts_by_type$ymax = cumsum(tweets_counts_by_type$fraction)#
+tweets_counts_by_type$ymin = c(0, head(tweets_counts_by_type$ymax, n=-1))#
+#
+# round to two decimal points#
+tweets_counts_by_type[,-1] <- round(tweets_counts_by_type[,-1], 2)#
+#
+# create legend label #
+Type_of_Tweet <- paste(tweets_counts_by_type$category, tweets_counts_by_type$percentage, "%")#
+#
+ggplot(tweets_counts_by_type, aes(ymax=ymax, ymin=ymin, xmax=4, xmin=3, fill=Type_of_Tweet)) +#
+  geom_rect() +#
+  coord_polar(theta="y") + #
+  xlim(c(2, 4)) +#
+  theme_void() +#
+  theme(legend.position = "right")  +#
+  scale_fill_manual(values = friendly_pal("ito_seven"))#
+## conduct sentiment analysis#
+# remove stop chars#
+steenwyk_organic$text <-  gsub("https\\S*", "", steenwyk_organic$text)#
+steenwyk_organic$text <-  gsub("@\\S*", "", steenwyk_organic$text) #
+steenwyk_organic$text  <-  gsub("amp", "", steenwyk_organic$text) #
+steenwyk_organic$text  <-  gsub("[\r\n]", "", steenwyk_organic$text)#
+steenwyk_organic$text  <-  gsub("[[:punct:]]", "", steenwyk_organic$text)#
+# remove stop words#
+steenwyk_organic_tweets <- steenwyk_organic %>%#
+  select(text) %>%#
+  unnest_tokens(word, text)#
+steenwyk_organic_tweets <- steenwyk_organic_tweets %>%#
+  anti_join(stop_words)
+bing_lex <- get_sentiments("bing")#
+#
+fn_sentiment <- steenwyk_organic_tweets %>% left_join(bing_lex)#
+#
+fn_sentiment %>% filter(!is.na(sentiment)) %>% group_by(sentiment) %>% summarise(n=n())
+setwd("/Users/jlsteenwyk/Desktop/GITHUB/ggpubfigs")
+devtools::install_github("JLSteenwyk/ggpubfigs")#
+# load ggpubfigs#
+library(ggpubfigs)
+library(ggplot2)
+library(ggpubfigs)
+ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("ito_seven")) + theme_big_grid()
+devtools::install_github("JLSteenwyk/ggpubfigs")#
+# load ggpubfigs#
+library(ggpubfigs)
+ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("ito_seven")) + theme_big_grid()
+devtools::install_github("JLSteenwyk/ggpubfigs")#
+# load ggpubfigs#
+library(ggpubfigs)
+ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("ito_seven")) + theme_big_grid()
+ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("ito_seven")) + theme_big_simple()
+ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("ito_seven")) + theme_big_grid()
+devtools::install_github("JLSteenwyk/ggpubfigs")#
+# load ggpubfigs#
+library(ggpubfigs)
+ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("ito_seven")) + theme_big_grid()
+ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("ito_seven")) + theme_big_grid()
+devtools::install_github("JLSteenwyk/ggpubfigs")#
+# load ggpubfigs#
+library(ggpubfigs)
+ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("ito_seven")) + theme_big_grid()
+theme_big_grid()
+?theme_big_grid()
+devtools::document()
 load_all()
 devtools::load_all()
-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven")) + geom_boxplot(position=position_nudge(x=-.1), width=0.1, outlier.shape=NA) + geom_jitter(alpha=.5, width=.025, size=2)
-p<-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + geom_violinhalf() + theme_simple() + scale_fill_manual(values = friendly_pal("ito_seven")) + geom_boxplot(position=position_nudge(x=-.1), width=0.1, outlier.shape=NA) + geom_jitter(alpha=.5, width=.025, size=2)
-p
+devtools::document()
+ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("ito_seven")) + theme_big_grid()
+devtools::document()

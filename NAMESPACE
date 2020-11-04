@@ -2,8 +2,8 @@
 
 export(friendly_pal)
 export(friendly_pals)
-export(theme_big_simple)
 export(theme_big_grid)
+export(theme_big_simple)
 export(theme_black)
 export(theme_blue)
 export(theme_grey)
