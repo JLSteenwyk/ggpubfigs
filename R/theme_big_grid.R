@@ -1,7 +1,7 @@
-#' Grid theme extension for ggplot2 plots
+#' Big grid theme extension for ggplot2 plots
 #'
 #' @description
-#' Grid theme for ggplot2 plots. See \href{https://ggplot2.tidyverse.org/reference/theme.html}{theme()} for complete documentation.
+#' Big grid theme for ggplot2 plots. See \href{https://ggplot2.tidyverse.org/reference/theme.html}{theme()} for complete documentation.
 #' 
 #' @export
 theme_big_grid <- function () { 
