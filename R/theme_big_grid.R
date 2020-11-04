@@ -4,7 +4,7 @@
 #' Grid theme for ggplot2 plots. See \href{https://ggplot2.tidyverse.org/reference/theme.html}{theme()} for complete documentation.
 #' 
 #' @export
-theme_grid <- function () { 
+theme_big_grid <- function () { 
     theme_bw(base_size=12, base_family="") %+replace% 
         theme(
             plot.background = element_rect(fill="transparent", colour=NA), 
