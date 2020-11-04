@@ -110,6 +110,23 @@ ggplot(iris, aes(Sepal.Length, fill = Species)) + geom_histogram() + theme_grid(
 </p>
 <br />
 
+**theme_big_grid()**<br />
+```R
+ggplot(iris, aes(Sepal.Length, Petal.Width, color = Species)) + geom_point() + theme_big_grid()
+```
+<p align="center">
+<img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/big_grid.png" alt="Grid" width="400">
+</p>
+<br />
+
+```R
+ggplot(iris, aes(Sepal.Length, fill = Species)) + geom_histogram() + theme_big_grid()
+```
+<p align="center">
+<img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/big_grid_histo.png" alt="Grid" width="400">
+</p>
+<br />
+
 **theme_simple()**<br />
 ```R
 ggplot(iris, aes(Sepal.Length, Petal.Width, color = Species)) + geom_point() + theme_simple()

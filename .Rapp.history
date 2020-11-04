@@ -397,37 +397,8 @@ bing_lex <- get_sentiments("bing")#
 fn_sentiment <- steenwyk_organic_tweets %>% left_join(bing_lex)#
 #
 fn_sentiment %>% filter(!is.na(sentiment)) %>% group_by(sentiment) %>% summarise(n=n())
-setwd("/Users/jlsteenwyk/Desktop/GITHUB/ggpubfigs")
-devtools::install_github("JLSteenwyk/ggpubfigs")#
-# load ggpubfigs#
-library(ggpubfigs)
+setwd("Desktop/GITHUB/ggpubfigs")
+ls -l
 library(ggplot2)
-library(ggpubfigs)
-ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("ito_seven")) + theme_big_grid()
-devtools::install_github("JLSteenwyk/ggpubfigs")#
-# load ggpubfigs#
-library(ggpubfigs)
-ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("ito_seven")) + theme_big_grid()
-devtools::install_github("JLSteenwyk/ggpubfigs")#
-# load ggpubfigs#
-library(ggpubfigs)
-ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("ito_seven")) + theme_big_grid()
-ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("ito_seven")) + theme_big_simple()
-ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("ito_seven")) + theme_big_grid()
-devtools::install_github("JLSteenwyk/ggpubfigs")#
-# load ggpubfigs#
-library(ggpubfigs)
-ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("ito_seven")) + theme_big_grid()
-ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("ito_seven")) + theme_big_grid()
-devtools::install_github("JLSteenwyk/ggpubfigs")#
-# load ggpubfigs#
-library(ggpubfigs)
-ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("ito_seven")) + theme_big_grid()
-theme_big_grid()
-?theme_big_grid()
-devtools::document()
-load_all()
 devtools::load_all()
-devtools::document()
-ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("ito_seven")) + theme_big_grid()
 devtools::document()
