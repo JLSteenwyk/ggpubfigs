@@ -57,10 +57,10 @@ ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_ma
 
 ```R
 # using the "bright_seven" color palette and theme_big_grid()
-ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("bright_seven")) + theme_grid()
+ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("bright_seven")) + theme_big_grid()
 ```
 <p align="center">
-<img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/bright_grid.png" alt="bright_grid" width="400">
+<img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/bright_big_grid.png" alt="bright_grid" width="400">
 </p>
 <br />
 
