@@ -397,8 +397,40 @@ bing_lex <- get_sentiments("bing")#
 fn_sentiment <- steenwyk_organic_tweets %>% left_join(bing_lex)#
 #
 fn_sentiment %>% filter(!is.na(sentiment)) %>% group_by(sentiment) %>% summarise(n=n())
-setwd("Desktop/GITHUB/ggpubfigs")
-ls -l
 library(ggplot2)
+devtools::install_github("JLSteenwyk/ggpubfigs")#
+# load ggpubfigs#
+library(ggpubfigs)
+ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("ito_seven")) + theme_big_grid()
+png("Desktop/GITHUB/ggpubfigs/master/docs/_static/big_simple_grid.png")
+ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("ito_seven")) + theme_big_grid()
+dev.off()
+png("Desktop/GITHUB/ggpubfigs/master/docs/_static/big_simple_grid.png")
+ggplot(iris, aes(Sepal.Length, Petal.Width, color = Species)) + geom_point() + theme_grid()
+dev.off()
+png("Desktop/GITHUB/ggpubfigs/master/docs/_static/big_grid.png")
+ggplot(iris, aes(Sepal.Length, Petal.Width, color = Species)) + geom_point() + theme_big_grid()
+dev.off()
+ggplot(iris, aes(Sepal.Length, fill = Species)) + geom_histogram() + theme_big_grid()
+png("Desktop/GITHUB/ggpubfigs/master/docs/_static/big_grid_histo.png")
+ggplot(iris, aes(Sepal.Length, fill = Species)) + geom_histogram() + theme_big_grid()
+dev.off()
+devtools::load_all()
+setwd("Desktop/GITHUB/ggpubfigs/")
+devtools::load_all()
+ggplot(iris, aes(Sepal.Length, fill = Species)) + geom_histogram() + theme_big_grid()
+png("Desktop/GITHUB/ggpubfigs/master/docs/_static/big_grid.png")#
+ggplot(iris, aes(Sepal.Length, Petal.Width, color = Species)) + geom_point() + theme_big_grid()#
+dev.off()
+png("master/docs/_static/big_grid.png")#
+ggplot(iris, aes(Sepal.Length, Petal.Width, color = Species)) + geom_point() + theme_big_grid()#
+dev.off()
+png("master/docs/_static/big_grid_histo.png")#
+ggplot(iris, aes(Sepal.Length, fill = Species)) + geom_histogram() + theme_big_grid()#
+dev.off()
+png("master/docs/_static/bright_big_grid.png")#
+ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_manual(values = friendly_pal("bright_seven")) + theme_big_grid()#
+dev.off()
+dev.off()
 devtools::load_all()
 devtools::document()
