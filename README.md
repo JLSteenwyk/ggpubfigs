@@ -1,8 +1,6 @@
 <p align="center">
     <img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/logo.png" alt="Logo" width="400">
     <p align="center">
-        <a href="https://zenodo.org/badge/latestdoi/300004847"><img src="https://zenodo.org/badge/300004847.svg" alt="DOI">
-        </a>
         <a href="https://lbesson.mit-license.org/" alt="License">
             <img src="https://img.shields.io/badge/License-MIT-blue.svg">
         </a>
@@ -16,9 +14,13 @@
     </p>
 </p>
 
-
 **ggpubfigs** is a ggplot2 extension that helps create publication ready figures for the life sciences.<br />
 Importantly, ggpubfigs implements themes and color palettes that are both aesthetically pleasing and colorblind friendly.
+<br /><br />
+
+If you found ggpubfigs helpful, please cite: *ggpubfigs: Colorblind-Friendly Color Palettes and ggplot2
+Graphic System Extensions for Publication-Quality Scientific
+Figures.* DOI: [10.1128/MRA.00871-21](https://jlsteenwyk.com/publication_pdfs/2021_Steenwyk_and_Rokas_Microbiology_Resource_Announcements.pdf)
 <br /><br />
 
 ---
