@@ -73,8 +73,7 @@ ggplot(mtcars, aes(factor(carb), fill=factor(cyl))) + geom_bar() + scale_fill_ma
 ---
 ## Color palettes
 Color palettes are all colorblind friendly. Thus, your figures will be accessible to more people, which is inarguably better for your audience and you. <br /><br />
-Color palettes are named using the following scheme: *identifier* (underscore) *number of colors in color palette*.<br /><br />
-Currently, there are six color palettes to pick from.<br />
+Color palettes are named using the following scheme: *identifier* (underscore) *number of colors in color palette*.<br />
 <p align="center"><img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/friendly_pals.png" alt="friendly_pals" width="400"></p>
 
 To use these colorblind friendly color palettes, use the following command as an example for both discrete and continuous purposes:<br />
