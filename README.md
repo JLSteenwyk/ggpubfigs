@@ -33,9 +33,9 @@ Figures.* DOI: [10.1128/MRA.00871-21](https://jlsteenwyk.com/publication_pdfs/20
 [Install](#install)<br />
 [Quick Start](#quick-start)<br />
 [Color palettes](#color-palettes)<br />
+[Table of Hex Codes](#table-of-hex-codes)<br />
 [Themes](#themes)<br />
 [FAQ](#faq)<br />
-[Table of Hex Codes](#table-of-hex-codes)<br />
 [Acknowledgements](#acknowledgements)
 <br /><br />
 
@@ -94,6 +94,24 @@ image(volcano, col = pal)
 <p align="center">
 <img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/contrast_three_volcano.png" alt="friendly_pals" width="400">
 </p>
+<br />
+
+---
+## Table of Hex Codes
+| Palettes       | Colors used                                                                     |
+| -------------- | ------------------------------------------------------------------------------- |
+| bright_seven   | #4477AA, #228833, #AA3377, #BBBBBB, #66CCEE, #CCBB44, #EE6677                   |
+| contrast_three | #004488, #BB5566, #DDAA33                                                       |
+| vibrant_seven  | #0077BB, #EE7733, #33BBEE, #CC3311, #009988, #EE3377, #BBBBBB                   |
+| muted_nine     | #332288, #117733, #CC6677, #88CCEE, #999933, #882255, #44AA99, #DDCC77, #AA4499 |
+| nickel_five    | #648FFF, #FE6100, #785EF0, #FFB000, #DC267F                                     |
+| ito_seven      | #0072B2, #D55E00, #009E73, #CC79A7, #56B4E9, #E69F00, #F0E442                   |
+| ibm_five       | #648FFF, #785EF0, #DC267F, #FE6100, #FFB000                                     |
+| wong_eight     | #E69F00, #56B4E9, #009E73, #F0E442, #0072B2, #D55E00, #CC79A7, #000000          |
+| tol_eight      | #332288, #117733, #44AA99, #88CCEE, #DDCC77, #CC6677, #AA4499, #882255          |
+| zesty_four     | #F5793A, #A95AA1, #85C0F9, #0F2080                                              |
+| retro_four     | #601A4A, #EE442F, #63ACBE, #F9F4EC                                              |
+
 <br />
 
 ---
@@ -234,24 +252,6 @@ ggplot(iris, aes(Sepal.Length, fill = Species)) + geom_histogram() + theme_red()
 <p align="center">
 <img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/red_histo.png" alt="Red" width="400">
 </p>
-
-<br />
-
----
-## Table of Hex Codes
-| Palettes       | Colors used                                                                     |
-| -------------- | ------------------------------------------------------------------------------- |
-| bright_seven   | #4477AA, #228833, #AA3377, #BBBBBB, #66CCEE, #CCBB44, #EE6677                   |
-| contrast_three | #004488, #BB5566, #DDAA33                                                       |
-| vibrant_seven  | #0077BB, #EE7733, #33BBEE, #CC3311, #009988, #EE3377, #BBBBBB                   |
-| muted_nine     | #332288, #117733, #CC6677, #88CCEE, #999933, #882255, #44AA99, #DDCC77, #AA4499 |
-| nickel_five    | #648FFF, #FE6100, #785EF0, #FFB000, #DC267F                                     |
-| ito_seven      | #0072B2, #D55E00, #009E73, #CC79A7, #56B4E9, #E69F00, #F0E442                   |
-| ibm_five       | #648FFF, #785EF0, #DC267F, #FE6100, #FFB000                                     |
-| wong_eight     | #E69F00, #56B4E9, #009E73, #F0E442, #0072B2, #D55E00, #CC79A7, #000000          |
-| tol_eight      | #332288, #117733, #44AA99, #88CCEE, #DDCC77, #CC6677, #AA4499, #882255          |
-| zesty_four     | #F5793A, #A95AA1, #85C0F9, #0F2080                                              |
-| retro_four     | #601A4A, #EE442F, #63ACBE, #F9F4EC                                              |
 
 <br />
 
