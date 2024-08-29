@@ -35,6 +35,7 @@ Figures.* DOI: [10.1128/MRA.00871-21](https://jlsteenwyk.com/publication_pdfs/20
 [Color palettes](#color-palettes)<br />
 [Themes](#themes)<br />
 [FAQ](#faq)<br />
+[Table of Hex Codes](#table-of-hex-codes)<br />
 [Acknowledgements](#acknowledgements)
 <br /><br />
 
@@ -236,7 +237,8 @@ ggplot(iris, aes(Sepal.Length, fill = Species)) + geom_histogram() + theme_red()
 
 <br />
 
-## Table of colors
+---
+## Table of Hex Codes
 | Palettes       | Colors used                                                                     |
 | -------------- | ------------------------------------------------------------------------------- |
 | bright_seven   | #4477AA, #228833, #AA3377, #BBBBBB, #66CCEE, #CCBB44, #EE6677                   |
