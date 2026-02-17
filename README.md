@@ -38,6 +38,7 @@ Figures.* DOI: [10.1128/MRA.00871-21](https://jlsteenwyk.com/publication_pdfs/20
 [Table of Hex Codes](#table-of-hex-codes)<br />
 [Themes](#themes)<br />
 [FAQ](#faq)<br />
+[Versioning](VERSIONING.md)<br />
 [Acknowledgements](#acknowledgements)
 <br /><br />
 
