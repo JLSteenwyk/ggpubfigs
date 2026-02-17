@@ -27,7 +27,7 @@ All three should match for every release.
 5. Create and push a tag for the release commit:
    - `git tag -a vX.Y.Z -m "ggpubfigs vX.Y.Z"`
    - `git push origin vX.Y.Z`
-6. (Optional) Create a GitHub Release from the tag.
+6. GitHub Actions automatically creates a GitHub Release from tags matching `v*.*.*`.
 
 ## Recommended branch workflow
 
