@@ -29,6 +29,7 @@ jobs:
         with:
           dependencies: '"hard"'
           needs: check
+          extra-packages: any::rcmdcheck
 
       - uses: r-lib/actions/check-r-package@v2
         with:
