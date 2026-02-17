@@ -11,7 +11,7 @@ An object of class \code{list} of length 6.
 friendly_pals
 }
 \description{
-Use \code{\link{wes_palette}} to construct palettes of desired length.
+Use \code{\link[wesanderson]{wes_palette}} to construct palettes of desired length.
 }
 \details{
 Color palettes were obtained from various websites include:

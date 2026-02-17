@@ -1,6 +1,6 @@
 #' Complete list of palettes
 #'
-#' Use \code{\link{wes_palette}} to construct palettes of desired length.
+#' Use \code{\link[wesanderson]{wes_palette}} to construct palettes of desired length.
 #'
 #' Color palettes were obtained from various websites include:
 #' https://personal.sron.nl/~pault/#sec:qualitative

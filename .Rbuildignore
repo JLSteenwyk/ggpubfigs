@@ -1,2 +1,4 @@
 ^LICENSE\.md$
 ^CRAN-RELEASE$
+^\\.github$
+^master$
