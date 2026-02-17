@@ -17,5 +17,6 @@ Imports:
     ggplot2
 Suggests: 
     knitr,
+    markdown,
     rmarkdown
 VignetteBuilder: knitr
