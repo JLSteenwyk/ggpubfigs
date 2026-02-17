@@ -13,7 +13,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        r: ["oldrel-1", "release", "devel"]
+        r: ["4.4", "4.5", "devel"]
 
     name: R ${{ matrix.r }}
 

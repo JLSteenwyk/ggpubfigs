@@ -14,6 +14,9 @@
         <a href="https://journals.asm.org/doi/10.1128/MRA.00871-21">
           <img src="https://zenodo.org/badge/DOI/10.1128/MRA.00871-21.svg">
         </a>
+        <a href="https://github.com/JLSteenwyk/ggpubfigs/actions/workflows/r-cmd-check.yaml" alt="R tested versions">
+            <img src="https://img.shields.io/badge/R%20tested-4.4%20%7C%204.5%20%7C%20devel-success">
+        </a>
     </p>
 </p>
 
@@ -281,5 +284,3 @@ ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) +
 <img src="https://github.com/JLSteenwyk/ggpubfigs/blob/master/master/docs/_static/violin_boxplot_dotplot_hybrid.png" alt="hybrid" width="400">
 </p>
 <br /> -->
-
-
