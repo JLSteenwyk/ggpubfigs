@@ -9,7 +9,7 @@ friendly_pal(name, n, type = c("discrete", "continuous"))
 \arguments{
 \item{name}{Name of desired palette. Choices are:
 \code{bright_seven}, \code{contrast_three},  \code{vibrant_seven},
-\code{muted_nine}, \code{nickel_five},  \code{ito_eight}}
+\code{muted_nine}, \code{nickel_five},  \code{ito_seven}}
 
 \item{n}{Number of colors desired.}
 

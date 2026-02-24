@@ -1,3 +1,8 @@
 inst/doc
 ..Rcheck/
 .Rproj.user/
+audit.sh
+audit_results/
+*.Rcheck/
+*.tar.gz
+Rplots.pdf

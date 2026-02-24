@@ -1,5 +1,11 @@
 # ggpubfigs
 
+## 1.1.2 (2026-02-24)
+
+- Added a `testthat` suite for palette and theme behavior.
+- Updated theme internals to use `linewidth` in `element_line()`/`element_rect()` to avoid ggplot2 `size` deprecation warnings.
+- Fixed palette documentation to reference `ito_seven` (instead of `ito_eight`) in `friendly_pal()` docs.
+
 ## 1.1.1 (2026-02-17)
 
 - Added CI-based R compatibility checks for R 4.4, R 4.5, and devel.

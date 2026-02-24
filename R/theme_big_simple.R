@@ -12,8 +12,8 @@ theme_big_simple <- function () {
             legend.key = element_rect(fill="transparent", colour=NA),
             legend.title=element_text(size=24),
             legend.text=element_text(size=20),
-            axis.line = element_line(color = "black", size = 1, linetype = "solid"),
-            axis.ticks = element_line(colour = "black", size = 1),
+            axis.line = element_line(color = "black", linewidth = 1, linetype = "solid"),
+            axis.ticks = element_line(colour = "black", linewidth = 1),
             panel.background  = element_blank(),
             panel.grid.minor = element_blank(),
             panel.grid.major = element_blank(),
@@ -25,7 +25,7 @@ theme_big_simple <- function () {
             axis.title.y = element_text(margin = margin(t = 0, r = 10, b = 0, l = 0), angle = 90, size = 24),
             axis.title.x = element_text(margin = margin(t = 10, r = 0, b = 0, l = 0), angle = 0, size = 24),
             axis.ticks.length = unit(0.20, "cm"),
-            strip.background = element_rect(color="black", size=1, linetype="solid"),
+            strip.background = element_rect(color="black", linewidth=1, linetype="solid"),
             strip.text.x = element_text(size = 20, color = "black"),
             strip.text.y = element_text(size = 20, color = "black")
         )

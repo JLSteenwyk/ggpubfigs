@@ -30,7 +30,7 @@ friendly_pals <- list(
 #' @param n Number of colors desired.
 #' @param name Name of desired palette. Choices are:
 #'   \code{bright_seven}, \code{contrast_three},  \code{vibrant_seven},
-#'   \code{muted_nine}, \code{nickel_five},  \code{ito_eight}
+#'   \code{muted_nine}, \code{nickel_five},  \code{ito_seven}
 #' @param type Either "continuous" or "discrete". Use continuous if you want
 #'   to automatically interpolate between colours.
 #'   @importFrom graphics rgb rect par image text

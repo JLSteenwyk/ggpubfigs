@@ -1,6 +1,6 @@
 Package: ggpubfigs
 Title: ggpubfigs
-Version: 1.1.1
+Version: 1.1.2
 Authors@R: 
     person(given = "Jacob L.",
            family = "Steenwyk",
@@ -19,5 +19,7 @@ Imports:
 Suggests: 
     knitr,
     markdown,
-    rmarkdown
+    rmarkdown,
+    testthat (>= 3.0.0)
 VignetteBuilder: knitr
+Config/testthat/edition: 3
