@@ -23,3 +23,10 @@ test_that("friendly_pal validates palette and size", {
     "Number of requested colors greater than what palette can offer"
   )
 })
+
+test_that("new palettes are available with expected sizes", {
+  expect_length(friendly_pal("tableau_ten"), 10)
+  expect_length(friendly_pal("glasbey_twelve"), 12)
+  expect_length(friendly_pal("viridis_eight"), 8)
+  expect_length(friendly_pal("cividis_eight"), 8)
+})

@@ -1,6 +1,6 @@
 Package: ggpubfigs
 Title: ggpubfigs
-Version: 1.1.2
+Version: 1.1.3
 Authors@R: 
     person(given = "Jacob L.",
            family = "Steenwyk",

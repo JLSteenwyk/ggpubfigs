@@ -5,7 +5,7 @@
 \alias{friendly_pals}
 \title{Complete list of palettes}
 \format{
-An object of class \code{list} of length 6.
+An object of class \code{list} of length 15.
 }
 \usage{
 friendly_pals

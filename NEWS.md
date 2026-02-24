@@ -1,5 +1,15 @@
 # ggpubfigs
 
+## 1.1.3 (2026-02-24)
+
+- Added four new colorblind-friendly palettes:
+  - `tableau_ten`
+  - `glasbey_twelve`
+  - `viridis_eight`
+  - `cividis_eight`
+- Added tests that validate availability and expected sizes of the new palettes.
+- Updated README palette table and man pages to include the new palettes.
+
 ## 1.1.2 (2026-02-24)
 
 - Added a `testthat` suite for palette and theme behavior.
