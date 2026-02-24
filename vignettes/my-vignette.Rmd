@@ -1,24 +1,143 @@
 ---
-title: "ggpubfigs"
+title: "Getting Started with ggpubfigs"
 author: "Jacob L. Steenwyk"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteEngine{knitr::knitr}
-  %\VignetteIndexEntry{Title of your vignette}
+  %\VignetteIndexEntry{Getting Started with ggpubfigs}
   %\usepackage[UTF-8]{inputenc}
 ---
 
-ggpubfigs has a set six themes to pick from. Three are for making publication ready figures and three are for presentation purposes:
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+library(ggplot2)
+library(ggpubfigs)
 
-**Publication ready themes**
-* theme_grid()
-* theme_simple()
-* theme_grey()
+scatter_by_species <- function(th) {
+  ggplot(iris, aes(Sepal.Length, Petal.Width, color = Species)) +
+    geom_point() +
+    th
+}
 
-**Presentation ready themes**
-* theme_black()
-* theme_blue()
-* theme_red()
+histo_by_species <- function(th) {
+  ggplot(iris, aes(Sepal.Length, fill = Species)) +
+    geom_histogram(bins = 20) +
+    th
+}
+```
 
-These themes can be added to typical ggplot2-based commands.
+`ggpubfigs` is a lightweight extension to `ggplot2` focused on:
+
+- publication-ready themes
+- presentation-ready themes
+- colorblind-friendly palettes
+
+This vignette shows all exported themes and the most common palette workflows.
+
+## Theme Overview
+
+`ggpubfigs` currently exports 8 themes:
+
+- Publication themes: `theme_grid()`, `theme_simple()`, `theme_grey()`
+- Presentation themes: `theme_black()`, `theme_blue()`, `theme_red()`
+- Larger-font themes: `theme_big_grid()`, `theme_big_simple()`
+
+## Quick Start
+
+```{r}
+ggplot(mtcars, aes(factor(carb), fill = factor(cyl))) +
+  geom_bar() +
+  scale_fill_manual(values = friendly_pal("ito_seven")) +
+  theme_big_simple()
+```
+
+## Publication Themes
+
+### `theme_grid()`
+
+```{r}
+scatter_by_species(theme_grid())
+```
+
+### `theme_simple()`
+
+```{r}
+scatter_by_species(theme_simple())
+```
+
+### `theme_grey()`
+
+```{r}
+scatter_by_species(theme_grey())
+```
+
+## Presentation Themes
+
+### `theme_black()`
+
+```{r}
+scatter_by_species(theme_black())
+```
+
+### `theme_blue()`
+
+```{r}
+scatter_by_species(theme_blue())
+```
+
+### `theme_red()`
+
+```{r}
+scatter_by_species(theme_red())
+```
+
+## Big Themes
+
+### `theme_big_grid()`
+
+```{r}
+histo_by_species(theme_big_grid())
+```
+
+### `theme_big_simple()`
+
+```{r}
+histo_by_species(theme_big_simple())
+```
+
+## Palette Workflows
+
+### Discrete palettes
+
+```{r}
+ggplot(mtcars, aes(factor(carb), fill = factor(cyl))) +
+  geom_bar() +
+  scale_fill_manual(values = friendly_pal("bright_seven")) +
+  theme_simple()
+```
+
+You can request fewer colors than the full palette:
+
+```{r}
+friendly_pal("vibrant_seven", 3)
+```
+
+### Continuous palette interpolation
+
+```{r}
+pal <- friendly_pal("contrast_three", 50, type = "continuous")
+image(volcano, col = pal)
+```
+
+## Available Palettes
+
+Use `friendly_pals` to inspect all palette names and values:
+
+```{r}
+names(friendly_pals)
+friendly_pals$ito_seven
+```

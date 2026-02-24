@@ -38,6 +38,7 @@ Figures.* DOI: [10.1128/MRA.00871-21](https://jlsteenwyk.com/publication_pdfs/20
 [Table of Hex Codes](#table-of-hex-codes)<br />
 [Themes](#themes)<br />
 [FAQ](#faq)<br />
+[Change Log](#change-log)<br />
 [Versioning](VERSIONING.md)<br />
 [Acknowledgements](#acknowledgements)
 <br /><br />
@@ -268,6 +269,20 @@ Yes! Submissions are encouraged, please feel free to contact me via  [twitter](h
 ## Acknowledgements
 I would like to thank the blooming R community for all the very helpful online forums, discussions, and open source books that have helped me learn R.<br /><br />
 I would also like to acknowledge that some of the example usage and color palette code was developed based on open source code from the [wes anderson](https://github.com/karthik/wesanderson) color palette package. 
+
+---
+## Change Log
+For full release notes, see [NEWS.md](NEWS.md).
+
+### 1.1.2 (2026-02-24)
+- Added `testthat` coverage for palette and theme behavior.
+- Migrated theme internals to `linewidth` in `element_line()` and `element_rect()`.
+- Fixed `friendly_pal()` documentation to reference `ito_seven`.
+
+### 1.1.1 (2026-02-17)
+- Added CI-based R compatibility checks for R 4.4, R 4.5, and devel.
+- Fixed CI dependency setup and package metadata/import issues for `R CMD check`.
+- Updated build ignore settings and README R-version testing badge.
 
 <!-- ---
 ## Bonus
