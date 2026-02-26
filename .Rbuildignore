@@ -2,3 +2,4 @@
 ^CRAN-RELEASE$
 ^\\.github$
 ^master$
+^docs$
