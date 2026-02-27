@@ -1,0 +1,346 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Usage &mdash; ggpubfigs  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=b745eb55" />
+
+  
+    <link rel="shortcut icon" href="../_static/logo.png"/>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Change log" href="../change_log/index.html" />
+    <link rel="prev" title="About" href="../about/index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html">
+            
+              <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../about/index.html">About</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#themes">Themes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#publication-ready-themes">Publication-ready themes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#presentation-ready-themes">Presentation-ready themes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#color-palettes">Color Palettes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#available-palettes">Available Palettes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../change_log/index.html">Change log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../other_software/index.html">Other software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../frequently_asked_questions/index.html">FAQ</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ggpubfigs</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Usage</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="usage">
+<h1>Usage<a class="headerlink" href="#usage" title="Link to this heading"></a></h1>
+<hr class="docutils" />
+<section id="themes">
+<h2>Themes<a class="headerlink" href="#themes" title="Link to this heading"></a></h2>
+<hr class="docutils" />
+<section id="publication-ready-themes">
+<h3>Publication-ready themes<a class="headerlink" href="#publication-ready-themes" title="Link to this heading"></a></h3>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>theme_grid()</strong></p>
+<div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="nf">ggplot</span><span class="p">(</span><span class="n">iris</span><span class="p">,</span><span class="w"> </span><span class="nf">aes</span><span class="p">(</span><span class="n">Sepal.Length</span><span class="p">,</span><span class="w"> </span><span class="n">Petal.Width</span><span class="p">,</span><span class="w"> </span><span class="n">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Species</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">geom_point</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">theme_grid</span><span class="p">()</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/grid.png"><img alt="../_images/grid.png" class="align-center" src="../_images/grid.png" style="width: 55%;" />
+</a>
+<div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="nf">ggplot</span><span class="p">(</span><span class="n">iris</span><span class="p">,</span><span class="w"> </span><span class="nf">aes</span><span class="p">(</span><span class="n">Sepal.Length</span><span class="p">,</span><span class="w"> </span><span class="n">fill</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Species</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">geom_histogram</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">theme_grid</span><span class="p">()</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/grid_histo.png"><img alt="../_images/grid_histo.png" class="align-center" src="../_images/grid_histo.png" style="width: 55%;" />
+</a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>theme_big_grid()</strong></p>
+<div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="nf">ggplot</span><span class="p">(</span><span class="n">iris</span><span class="p">,</span><span class="w"> </span><span class="nf">aes</span><span class="p">(</span><span class="n">Sepal.Length</span><span class="p">,</span><span class="w"> </span><span class="n">Petal.Width</span><span class="p">,</span><span class="w"> </span><span class="n">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Species</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">geom_point</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">theme_big_grid</span><span class="p">()</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/big_grid.png"><img alt="../_images/big_grid.png" class="align-center" src="../_images/big_grid.png" style="width: 55%;" />
+</a>
+<div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="nf">ggplot</span><span class="p">(</span><span class="n">iris</span><span class="p">,</span><span class="w"> </span><span class="nf">aes</span><span class="p">(</span><span class="n">Sepal.Length</span><span class="p">,</span><span class="w"> </span><span class="n">fill</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Species</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">geom_histogram</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">theme_big_grid</span><span class="p">()</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/big_grid_histo.png"><img alt="../_images/big_grid_histo.png" class="align-center" src="../_images/big_grid_histo.png" style="width: 55%;" />
+</a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>theme_simple()</strong></p>
+<div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="nf">ggplot</span><span class="p">(</span><span class="n">iris</span><span class="p">,</span><span class="w"> </span><span class="nf">aes</span><span class="p">(</span><span class="n">Sepal.Length</span><span class="p">,</span><span class="w"> </span><span class="n">Petal.Width</span><span class="p">,</span><span class="w"> </span><span class="n">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Species</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">geom_point</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">theme_simple</span><span class="p">()</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/simple.png"><img alt="../_images/simple.png" class="align-center" src="../_images/simple.png" style="width: 55%;" />
+</a>
+<div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="nf">ggplot</span><span class="p">(</span><span class="n">iris</span><span class="p">,</span><span class="w"> </span><span class="nf">aes</span><span class="p">(</span><span class="n">Sepal.Length</span><span class="p">,</span><span class="w"> </span><span class="n">fill</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Species</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">geom_histogram</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">theme_simple</span><span class="p">()</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/simple_histo.png"><img alt="../_images/simple_histo.png" class="align-center" src="../_images/simple_histo.png" style="width: 55%;" />
+</a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>theme_big_simple()</strong></p>
+<div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="nf">ggplot</span><span class="p">(</span><span class="n">iris</span><span class="p">,</span><span class="w"> </span><span class="nf">aes</span><span class="p">(</span><span class="n">Sepal.Length</span><span class="p">,</span><span class="w"> </span><span class="n">Petal.Width</span><span class="p">,</span><span class="w"> </span><span class="n">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Species</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">geom_point</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">theme_big_simple</span><span class="p">()</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/big_simple.png"><img alt="../_images/big_simple.png" class="align-center" src="../_images/big_simple.png" style="width: 55%;" />
+</a>
+<div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="nf">ggplot</span><span class="p">(</span><span class="n">iris</span><span class="p">,</span><span class="w"> </span><span class="nf">aes</span><span class="p">(</span><span class="n">Sepal.Length</span><span class="p">,</span><span class="w"> </span><span class="n">fill</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Species</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">geom_histogram</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">theme_big_simple</span><span class="p">()</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/big_simple_histo.png"><img alt="../_images/big_simple_histo.png" class="align-center" src="../_images/big_simple_histo.png" style="width: 55%;" />
+</a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>theme_grey()</strong></p>
+<div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="nf">ggplot</span><span class="p">(</span><span class="n">iris</span><span class="p">,</span><span class="w"> </span><span class="nf">aes</span><span class="p">(</span><span class="n">Sepal.Length</span><span class="p">,</span><span class="w"> </span><span class="n">Petal.Width</span><span class="p">,</span><span class="w"> </span><span class="n">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Species</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">geom_point</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">theme_grey</span><span class="p">()</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/grey.png"><img alt="../_images/grey.png" class="align-center" src="../_images/grey.png" style="width: 55%;" />
+</a>
+<div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="nf">ggplot</span><span class="p">(</span><span class="n">iris</span><span class="p">,</span><span class="w"> </span><span class="nf">aes</span><span class="p">(</span><span class="n">Sepal.Length</span><span class="p">,</span><span class="w"> </span><span class="n">fill</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Species</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">geom_histogram</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">theme_grey</span><span class="p">()</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/grey_histo.png"><img alt="../_images/grey_histo.png" class="align-center" src="../_images/grey_histo.png" style="width: 55%;" />
+</a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="presentation-ready-themes">
+<h3>Presentation-ready themes<a class="headerlink" href="#presentation-ready-themes" title="Link to this heading"></a></h3>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>theme_black()</strong></p>
+<div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="nf">ggplot</span><span class="p">(</span><span class="n">iris</span><span class="p">,</span><span class="w"> </span><span class="nf">aes</span><span class="p">(</span><span class="n">Sepal.Length</span><span class="p">,</span><span class="w"> </span><span class="n">Petal.Width</span><span class="p">,</span><span class="w"> </span><span class="n">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Species</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">geom_point</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">theme_black</span><span class="p">()</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/black.png"><img alt="../_images/black.png" class="align-center" src="../_images/black.png" style="width: 55%;" />
+</a>
+<div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="nf">ggplot</span><span class="p">(</span><span class="n">iris</span><span class="p">,</span><span class="w"> </span><span class="nf">aes</span><span class="p">(</span><span class="n">Sepal.Length</span><span class="p">,</span><span class="w"> </span><span class="n">fill</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Species</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">geom_histogram</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">theme_black</span><span class="p">()</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/black_histo.png"><img alt="../_images/black_histo.png" class="align-center" src="../_images/black_histo.png" style="width: 55%;" />
+</a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>theme_blue()</strong></p>
+<div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="nf">ggplot</span><span class="p">(</span><span class="n">iris</span><span class="p">,</span><span class="w"> </span><span class="nf">aes</span><span class="p">(</span><span class="n">Sepal.Length</span><span class="p">,</span><span class="w"> </span><span class="n">Petal.Width</span><span class="p">,</span><span class="w"> </span><span class="n">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Species</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">geom_point</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">theme_blue</span><span class="p">()</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/blue.png"><img alt="../_images/blue.png" class="align-center" src="../_images/blue.png" style="width: 55%;" />
+</a>
+<div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="nf">ggplot</span><span class="p">(</span><span class="n">iris</span><span class="p">,</span><span class="w"> </span><span class="nf">aes</span><span class="p">(</span><span class="n">Sepal.Length</span><span class="p">,</span><span class="w"> </span><span class="n">fill</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Species</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">geom_histogram</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">theme_blue</span><span class="p">()</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/blue_histo.png"><img alt="../_images/blue_histo.png" class="align-center" src="../_images/blue_histo.png" style="width: 55%;" />
+</a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>theme_red()</strong></p>
+<div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="nf">ggplot</span><span class="p">(</span><span class="n">iris</span><span class="p">,</span><span class="w"> </span><span class="nf">aes</span><span class="p">(</span><span class="n">Sepal.Length</span><span class="p">,</span><span class="w"> </span><span class="n">Petal.Width</span><span class="p">,</span><span class="w"> </span><span class="n">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Species</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">geom_point</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">theme_red</span><span class="p">()</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/red.png"><img alt="../_images/red.png" class="align-center" src="../_images/red.png" style="width: 55%;" />
+</a>
+<div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="nf">ggplot</span><span class="p">(</span><span class="n">iris</span><span class="p">,</span><span class="w"> </span><span class="nf">aes</span><span class="p">(</span><span class="n">Sepal.Length</span><span class="p">,</span><span class="w"> </span><span class="n">fill</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Species</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">geom_histogram</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">theme_red</span><span class="p">()</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/red_histo.png"><img alt="../_images/red_histo.png" class="align-center" src="../_images/red_histo.png" style="width: 55%;" />
+</a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+</section>
+<section id="color-palettes">
+<h2>Color Palettes<a class="headerlink" href="#color-palettes" title="Link to this heading"></a></h2>
+<hr class="docutils" />
+<p>Color palettes are all colorblind friendly. Thus, your figures will be accessible to more
+people. Color palettes are named using the following scheme: <em>identifier</em> (underscore)
+<em>number of colors in color palette</em>.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Discrete usage example</strong></p>
+<div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="nf">ggplot</span><span class="p">(</span><span class="n">mtcars</span><span class="p">,</span><span class="w"> </span><span class="nf">aes</span><span class="p">(</span><span class="nf">factor</span><span class="p">(</span><span class="n">carb</span><span class="p">),</span><span class="w"> </span><span class="n">fill</span><span class="o">=</span><span class="nf">factor</span><span class="p">(</span><span class="n">cyl</span><span class="p">)))</span><span class="w"> </span><span class="o">+</span>
+<span class="w">  </span><span class="nf">geom_bar</span><span class="p">()</span><span class="w"> </span><span class="o">+</span>
+<span class="w">  </span><span class="nf">scale_fill_manual</span><span class="p">(</span><span class="n">values</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">friendly_pal</span><span class="p">(</span><span class="s">&quot;contrast_three&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/contrast_three.png"><img alt="../_images/contrast_three.png" class="align-center" src="../_images/contrast_three.png" style="width: 55%;" />
+</a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Continuous usage example</strong></p>
+<div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="n">pal</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">friendly_pal</span><span class="p">(</span><span class="s">&quot;contrast_three&quot;</span><span class="p">,</span><span class="w"> </span><span class="m">50</span><span class="p">,</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;continuous&quot;</span><span class="p">)</span>
+<span class="nf">image</span><span class="p">(</span><span class="n">volcano</span><span class="p">,</span><span class="w"> </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pal</span><span class="p">)</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/contrast_three_volcano.png"><img alt="../_images/contrast_three_volcano.png" class="align-center" src="../_images/contrast_three_volcano.png" style="width: 55%;" />
+</a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<section id="available-palettes">
+<h3>Available Palettes<a class="headerlink" href="#available-palettes" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Palette Name</p></th>
+<th class="head"><p>Number of Colors</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>bright_seven</p></td>
+<td><p>7</p></td>
+</tr>
+<tr class="row-odd"><td><p>contrast_three</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-even"><td><p>vibrant_seven</p></td>
+<td><p>7</p></td>
+</tr>
+<tr class="row-odd"><td><p>muted_nine</p></td>
+<td><p>9</p></td>
+</tr>
+<tr class="row-even"><td><p>nickel_five</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><p>ito_seven</p></td>
+<td><p>7</p></td>
+</tr>
+<tr class="row-even"><td><p>ibm_five</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><p>wong_eight</p></td>
+<td><p>8</p></td>
+</tr>
+<tr class="row-even"><td><p>tol_eight</p></td>
+<td><p>8</p></td>
+</tr>
+<tr class="row-odd"><td><p>zesty_four</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-even"><td><p>retro_four</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-odd"><td><p>tableau_ten</p></td>
+<td><p>10</p></td>
+</tr>
+<tr class="row-even"><td><p>glasbey_twelve</p></td>
+<td><p>12</p></td>
+</tr>
+<tr class="row-odd"><td><p>viridis_eight</p></td>
+<td><p>8</p></td>
+</tr>
+<tr class="row-even"><td><p>cividis_eight</p></td>
+<td><p>8</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../about/index.html" class="btn btn-neutral float-left" title="About" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../change_log/index.html" class="btn btn-neutral float-right" title="Change log" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020 Jacob L. Steenwyk.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
