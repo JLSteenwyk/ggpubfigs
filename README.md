@@ -15,7 +15,7 @@
           <img src="https://zenodo.org/badge/DOI/10.1128/MRA.00871-21.svg">
         </a>
         <a href="https://github.com/JLSteenwyk/ggpubfigs/actions/workflows/r-cmd-check.yaml" alt="R tested versions">
-            <img src="https://img.shields.io/badge/R%20tested-4.4%20%7C%204.5%20%7C%20devel-success">
+            <img src="https://img.shields.io/badge/R%20tested-4.4%20%7C%204.5%20%7C%204.6%20%7C%20devel-success">
         </a>
     </p>
 </p>
@@ -277,6 +277,10 @@ I would also like to acknowledge that some of the example usage and color palett
 ---
 ## Change Log
 For full release notes, see [NEWS.md](NEWS.md).
+
+### 1.1.4 (2026-05-12)
+- Added R 4.6 to the CI compatibility matrix (now 4.4, 4.5, 4.6, devel).
+- Updated R-version testing badge to include R 4.6.
 
 ### 1.1.3 (2026-02-24)
 - Added `tableau_ten`, `glasbey_twelve`, `viridis_eight`, and `cividis_eight`.

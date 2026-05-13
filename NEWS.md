@@ -1,5 +1,10 @@
 # ggpubfigs
 
+## 1.1.4 (2026-05-12)
+
+- Added R 4.6 to the CI compatibility matrix; tested R versions are now 4.4, 4.5, 4.6, and devel.
+- Updated README R-version testing badge to include R 4.6.
+
 ## 1.1.3 (2026-02-24)
 
 - Added four new colorblind-friendly palettes:
